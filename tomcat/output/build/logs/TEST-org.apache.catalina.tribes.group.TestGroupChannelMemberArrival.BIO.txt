@@ -1,0 +1,265 @@
+Testsuite: org.apache.catalina.tribes.group.TestGroupChannelMemberArrival
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7,605 sec
+------------- Standard Output ---------------
+1507209126157 Listener-2:member added, has 1 members now. Member:[host: 192.168.86.1, port: 4001, id: 228.129.73.87.93.234.79.116.189.234.145.92.208.173.141.124, payload: Channel-8]; Thread:Thread-23, hash:1316704413
+1507209126157 Listener-3:member added, has 1 members now. Member:[host: 192.168.86.1, port: 4001, id: 228.129.73.87.93.234.79.116.189.234.145.92.208.173.141.124, payload: Channel-8]; Thread:Thread-29, hash:1320217483
+1507209126157 Listener-9:member added, has 1 members now. Member:[host: 192.168.86.1, port: 4001, id: 228.129.73.87.93.234.79.116.189.234.145.92.208.173.141.124, payload: Channel-8]; Thread:Thread-30, hash:708107148
+1507209126157 Listener-6:member added, has 1 members now. Member:[host: 192.168.86.1, port: 4001, id: 228.129.73.87.93.234.79.116.189.234.145.92.208.173.141.124, payload: Channel-8]; Thread:Thread-28, hash:1799308904
+1507209126157 Listener-1:member added, has 1 members now. Member:[host: 192.168.86.1, port: 4001, id: 228.129.73.87.93.234.79.116.189.234.145.92.208.173.141.124, payload: Channel-8]; Thread:Thread-25, hash:1822849896
+1507209126157 Listener-5:member added, has 1 members now. Member:[host: 192.168.86.1, port: 4001, id: 228.129.73.87.93.234.79.116.189.234.145.92.208.173.141.124, payload: Channel-8]; Thread:Thread-22, hash:907555845
+1507209126157 Listener-4:member added, has 1 members now. Member:[host: 192.168.86.1, port: 4001, id: 228.129.73.87.93.234.79.116.189.234.145.92.208.173.141.124, payload: Channel-8]; Thread:Thread-24, hash:678739758
+1507209126157 Listener-10:member added, has 1 members now. Member:[host: 192.168.86.1, port: 4001, id: 228.129.73.87.93.234.79.116.189.234.145.92.208.173.141.124, payload: Channel-8]; Thread:Thread-27, hash:1647631853
+1507209126157 Listener-7:member added, has 1 members now. Member:[host: 192.168.86.1, port: 4001, id: 228.129.73.87.93.234.79.116.189.234.145.92.208.173.141.124, payload: Channel-8]; Thread:Thread-26, hash:487516938
+1507209126172 Listener-7:member added, has 2 members now. Member:[host: 192.168.86.1, port: 4000, id: 173.66.33.2.249.241.68.188.160.253.107.49.241.46.157.122, payload: Channel-2]; Thread:Thread-34, hash:1504922122
+1507209126172 Listener-10:member added, has 2 members now. Member:[host: 192.168.86.1, port: 4000, id: 173.66.33.2.249.241.68.188.160.253.107.49.241.46.157.122, payload: Channel-2]; Thread:Thread-33, hash:909146970
+1507209126172 Listener-3:member added, has 2 members now. Member:[host: 192.168.86.1, port: 4000, id: 173.66.33.2.249.241.68.188.160.253.107.49.241.46.157.122, payload: Channel-2]; Thread:Thread-37, hash:454091296
+1507209126172 Listener-4:member added, has 2 members now. Member:[host: 192.168.86.1, port: 4000, id: 173.66.33.2.249.241.68.188.160.253.107.49.241.46.157.122, payload: Channel-2]; Thread:Thread-36, hash:1804307210
+1507209126172 Listener-6:member added, has 2 members now. Member:[host: 192.168.86.1, port: 4000, id: 173.66.33.2.249.241.68.188.160.253.107.49.241.46.157.122, payload: Channel-2]; Thread:Thread-31, hash:337800118
+1507209126172 Listener-10:member added, has 3 members now. Member:[host: 192.168.86.1, port: 4002, id: 28.181.150.109.143.14.74.176.184.82.59.117.103.243.171.196, payload: Channel-6]; Thread:Thread-41, hash:1852607947
+1507209126172 Listener-1:member added, has 2 members now. Member:[host: 192.168.86.1, port: 4002, id: 28.181.150.109.143.14.74.176.184.82.59.117.103.243.171.196, payload: Channel-6]; Thread:Thread-43, hash:274533749
+1507209126172 Listener-5:member added, has 2 members now. Member:[host: 192.168.86.1, port: 4002, id: 28.181.150.109.143.14.74.176.184.82.59.117.103.243.171.196, payload: Channel-6]; Thread:Thread-49, hash:1577236797
+1507209126172 Listener-9:member added, has 2 members now. Member:[host: 192.168.86.1, port: 4002, id: 28.181.150.109.143.14.74.176.184.82.59.117.103.243.171.196, payload: Channel-6]; Thread:Thread-50, hash:618482845
+1507209126172 Listener-2:member added, has 2 members now. Member:[host: 192.168.86.1, port: 4002, id: 28.181.150.109.143.14.74.176.184.82.59.117.103.243.171.196, payload: Channel-6]; Thread:Thread-45, hash:418226991
+1507209126204 Listener-10:member added, has 4 members now. Member:[host: 192.168.86.1, port: 4003, id: 49.232.19.68.146.53.70.148.177.234.214.228.252.199.181.171, payload: Channel-4]; Thread:Thread-58, hash:176261066
+1507209126204 Listener-9:member added, has 4 members now. Member:[host: 192.168.86.1, port: 4003, id: 49.232.19.68.146.53.70.148.177.234.214.228.252.199.181.171, payload: Channel-4]; Thread:Thread-56, hash:82818778
+1507209126204 Listener-7:member added, has 4 members now. Member:[host: 192.168.86.1, port: 4003, id: 49.232.19.68.146.53.70.148.177.234.214.228.252.199.181.171, payload: Channel-4]; Thread:Thread-59, hash:850282185
+1507209126204 Listener-1:member added, has 4 members now. Member:[host: 192.168.86.1, port: 4003, id: 49.232.19.68.146.53.70.148.177.234.214.228.252.199.181.171, payload: Channel-4]; Thread:Thread-60, hash:1413590084
+1507209126204 Listener-6:member added, has 3 members now. Member:[host: 192.168.86.1, port: 4003, id: 49.232.19.68.146.53.70.148.177.234.214.228.252.199.181.171, payload: Channel-4]; Thread:Thread-57, hash:145349992
+1507209126204 Listener-8:member added, has 3 members now. Member:[host: 192.168.86.1, port: 4003, id: 49.232.19.68.146.53.70.148.177.234.214.228.252.199.181.171, payload: Channel-4]; Thread:Thread-52, hash:735222003
+1507209126204 Listener-5:member added, has 4 members now. Member:[host: 192.168.86.1, port: 4003, id: 49.232.19.68.146.53.70.148.177.234.214.228.252.199.181.171, payload: Channel-4]; Thread:Thread-54, hash:942126164
+1507209126204 Listener-3:member added, has 4 members now. Member:[host: 192.168.86.1, port: 4003, id: 49.232.19.68.146.53.70.148.177.234.214.228.252.199.181.171, payload: Channel-4]; Thread:Thread-55, hash:847086262
+1507209126204 Listener-2:member added, has 3 members now. Member:[host: 192.168.86.1, port: 4003, id: 49.232.19.68.146.53.70.148.177.234.214.228.252.199.181.171, payload: Channel-4]; Thread:Thread-51, hash:1682802111
+1507209126172 Listener-1:member added, has 3 members now. Member:[host: 192.168.86.1, port: 4000, id: 173.66.33.2.249.241.68.188.160.253.107.49.241.46.157.122, payload: Channel-2]; Thread:Thread-35, hash:1115082168
+1507209126172 Listener-8:member added, has 2 members now. Member:[host: 192.168.86.1, port: 4000, id: 173.66.33.2.249.241.68.188.160.253.107.49.241.46.157.122, payload: Channel-2]; Thread:Thread-32, hash:1148385776
+1507209126172 Listener-5:member added, has 3 members now. Member:[host: 192.168.86.1, port: 4000, id: 173.66.33.2.249.241.68.188.160.253.107.49.241.46.157.122, payload: Channel-2]; Thread:Thread-38, hash:1773768060
+1507209126219 Listener-6:member added, has 4 members now. Member:[host: 192.168.86.1, port: 4004, id: 130.86.230.153.255.210.70.212.135.250.171.123.252.16.229.87, payload: Channel-10]; Thread:Thread-61, hash:2048417961
+1507209126172 Listener-9:member added, has 3 members now. Member:[host: 192.168.86.1, port: 4000, id: 173.66.33.2.249.241.68.188.160.253.107.49.241.46.157.122, payload: Channel-2]; Thread:Thread-39, hash:672665930
+1507209126172 Listener-7:member added, has 3 members now. Member:[host: 192.168.86.1, port: 4002, id: 28.181.150.109.143.14.74.176.184.82.59.117.103.243.171.196, payload: Channel-6]; Thread:Thread-42, hash:694095814
+1507209126172 Listener-4:member added, has 3 members now. Member:[host: 192.168.86.1, port: 4002, id: 28.181.150.109.143.14.74.176.184.82.59.117.103.243.171.196, payload: Channel-6]; Thread:Thread-47, hash:1100940331
+1507209126172 Listener-8:member added, has 1 members now. Member:[host: 192.168.86.1, port: 4002, id: 28.181.150.109.143.14.74.176.184.82.59.117.103.243.171.196, payload: Channel-6]; Thread:Thread-46, hash:1857858993
+1507209126219 Listener-2:member added, has 4 members now. Member:[host: 192.168.86.1, port: 4004, id: 130.86.230.153.255.210.70.212.135.250.171.123.252.16.229.87, payload: Channel-10]; Thread:Thread-62, hash:1909241014
+1507209126219 Listener-8:member added, has 4 members now. Member:[host: 192.168.86.1, port: 4004, id: 130.86.230.153.255.210.70.212.135.250.171.123.252.16.229.87, payload: Channel-10]; Thread:Thread-70, hash:1199629388
+1507209126172 Listener-3:member added, has 3 members now. Member:[host: 192.168.86.1, port: 4002, id: 28.181.150.109.143.14.74.176.184.82.59.117.103.243.171.196, payload: Channel-6]; Thread:Thread-48, hash:1149415243
+1507209126219 Listener-1:member added, has 5 members now. Member:[host: 192.168.86.1, port: 4004, id: 130.86.230.153.255.210.70.212.135.250.171.123.252.16.229.87, payload: Channel-10]; Thread:Thread-66, hash:1332744099
+1507209126219 Listener-5:member added, has 5 members now. Member:[host: 192.168.86.1, port: 4004, id: 130.86.230.153.255.210.70.212.135.250.171.123.252.16.229.87, payload: Channel-10]; Thread:Thread-68, hash:223491742
+1507209126219 Listener-4:member added, has 4 members now. Member:[host: 192.168.86.1, port: 4004, id: 130.86.230.153.255.210.70.212.135.250.171.123.252.16.229.87, payload: Channel-10]; Thread:Thread-63, hash:357996948
+1507209126219 Listener-3:member added, has 5 members now. Member:[host: 192.168.86.1, port: 4004, id: 130.86.230.153.255.210.70.212.135.250.171.123.252.16.229.87, payload: Channel-10]; Thread:Thread-65, hash:179547831
+1507209126219 Listener-9:member added, has 5 members now. Member:[host: 192.168.86.1, port: 4004, id: 130.86.230.153.255.210.70.212.135.250.171.123.252.16.229.87, payload: Channel-10]; Thread:Thread-67, hash:1557134983
+1507209126219 Listener-7:member added, has 5 members now. Member:[host: 192.168.86.1, port: 4004, id: 130.86.230.153.255.210.70.212.135.250.171.123.252.16.229.87, payload: Channel-10]; Thread:Thread-64, hash:1419457248
+1507209126250 Listener-1:member added, has 6 members now. Member:[host: 192.168.86.1, port: 4005, id: 49.182.68.21.62.126.78.216.136.34.221.56.223.124.77.152, payload: Channel-3]; Thread:Thread-77, hash:701942604
+1507209126250 Listener-8:member added, has 5 members now. Member:[host: 192.168.86.1, port: 4005, id: 49.182.68.21.62.126.78.216.136.34.221.56.223.124.77.152, payload: Channel-3]; Thread:Thread-80, hash:1878568755
+1507209126250 Listener-2:member added, has 5 members now. Member:[host: 192.168.86.1, port: 4005, id: 49.182.68.21.62.126.78.216.136.34.221.56.223.124.77.152, payload: Channel-3]; Thread:Thread-71, hash:1978441799
+1507209126250 Listener-7:member added, has 6 members now. Member:[host: 192.168.86.1, port: 4005, id: 49.182.68.21.62.126.78.216.136.34.221.56.223.124.77.152, payload: Channel-3]; Thread:Thread-75, hash:610477597
+1507209126250 Listener-9:member added, has 6 members now. Member:[host: 192.168.86.1, port: 4005, id: 49.182.68.21.62.126.78.216.136.34.221.56.223.124.77.152, payload: Channel-3]; Thread:Thread-78, hash:1338996218
+1507209126250 Listener-4:member added, has 5 members now. Member:[host: 192.168.86.1, port: 4005, id: 49.182.68.21.62.126.78.216.136.34.221.56.223.124.77.152, payload: Channel-3]; Thread:Thread-73, hash:826970795
+1507209126250 Listener-6:member added, has 5 members now. Member:[host: 192.168.86.1, port: 4005, id: 49.182.68.21.62.126.78.216.136.34.221.56.223.124.77.152, payload: Channel-3]; Thread:Thread-72, hash:2075047171
+1507209126250 Listener-5:member added, has 6 members now. Member:[host: 192.168.86.1, port: 4005, id: 49.182.68.21.62.126.78.216.136.34.221.56.223.124.77.152, payload: Channel-3]; Thread:Thread-76, hash:2129792732
+1507209126250 Listener-10:member added, has 5 members now. Member:[host: 192.168.86.1, port: 4005, id: 49.182.68.21.62.126.78.216.136.34.221.56.223.124.77.152, payload: Channel-3]; Thread:Thread-74, hash:403013971
+1507209126282 Listener-5:member added, has 7 members now. Member:[host: 192.168.86.1, port: 4006, id: 31.190.91.208.200.12.76.0.185.147.127.69.190.224.54.166, payload: Channel-7]; Thread:Thread-89, hash:93599996
+1507209126282 Listener-8:member added, has 6 members now. Member:[host: 192.168.86.1, port: 4006, id: 31.190.91.208.200.12.76.0.185.147.127.69.190.224.54.166, payload: Channel-7]; Thread:Thread-88, hash:643024956
+1507209126282 Listener-2:member added, has 6 members now. Member:[host: 192.168.86.1, port: 4006, id: 31.190.91.208.200.12.76.0.185.147.127.69.190.224.54.166, payload: Channel-7]; Thread:Thread-84, hash:488585542
+1507209126282 Listener-4:member added, has 6 members now. Member:[host: 192.168.86.1, port: 4006, id: 31.190.91.208.200.12.76.0.185.147.127.69.190.224.54.166, payload: Channel-7]; Thread:Thread-85, hash:246978412
+1507209126282 Listener-9:member added, has 7 members now. Member:[host: 192.168.86.1, port: 4006, id: 31.190.91.208.200.12.76.0.185.147.127.69.190.224.54.166, payload: Channel-7]; Thread:Thread-90, hash:1746467019
+1507209126282 Listener-3:member added, has 6 members now. Member:[host: 192.168.86.1, port: 4006, id: 31.190.91.208.200.12.76.0.185.147.127.69.190.224.54.166, payload: Channel-7]; Thread:Thread-87, hash:324792165
+1507209126282 Listener-1:member added, has 7 members now. Member:[host: 192.168.86.1, port: 4006, id: 31.190.91.208.200.12.76.0.185.147.127.69.190.224.54.166, payload: Channel-7]; Thread:Thread-86, hash:447123727
+1507209126282 Listener-10:member added, has 6 members now. Member:[host: 192.168.86.1, port: 4006, id: 31.190.91.208.200.12.76.0.185.147.127.69.190.224.54.166, payload: Channel-7]; Thread:Thread-83, hash:807801402
+1507209126282 Listener-6:member added, has 6 members now. Member:[host: 192.168.86.1, port: 4006, id: 31.190.91.208.200.12.76.0.185.147.127.69.190.224.54.166, payload: Channel-7]; Thread:Thread-82, hash:1753433154
+1507209126297 Listener-7:member added, has 7 members now. Member:[host: 192.168.86.1, port: 4007, id: 203.42.244.245.127.51.72.228.136.136.34.120.21.255.81.84, payload: Channel-5]; Thread:Thread-98, hash:1896559357
+1507209126297 Listener-9:member added, has 8 members now. Member:[host: 192.168.86.1, port: 4007, id: 203.42.244.245.127.51.72.228.136.136.34.120.21.255.81.84, payload: Channel-5]; Thread:Thread-99, hash:1410594393
+1507209126297 Listener-6:member added, has 7 members now. Member:[host: 192.168.86.1, port: 4007, id: 203.42.244.245.127.51.72.228.136.136.34.120.21.255.81.84, payload: Channel-5]; Thread:Thread-94, hash:43830894
+1507209126297 Listener-4:member added, has 7 members now. Member:[host: 192.168.86.1, port: 4007, id: 203.42.244.245.127.51.72.228.136.136.34.120.21.255.81.84, payload: Channel-5]; Thread:Thread-95, hash:842730698
+1507209126328 Listener-3:member added, has 8 members now. Member:[host: 192.168.86.1, port: 4008, id: 179.67.116.68.132.39.77.158.138.187.75.128.225.86.75.240, payload: Channel-1]; Thread:Thread-106, hash:250152800
+1507209126328 Listener-4:member added, has 8 members now. Member:[host: 192.168.86.1, port: 4008, id: 179.67.116.68.132.39.77.158.138.187.75.128.225.86.75.240, payload: Channel-1]; Thread:Thread-104, hash:2105793947
+1507209126328 Listener-6:member added, has 8 members now. Member:[host: 192.168.86.1, port: 4008, id: 179.67.116.68.132.39.77.158.138.187.75.128.225.86.75.240, payload: Channel-1]; Thread:Thread-105, hash:1718781530
+1507209126328 Listener-8:member added, has 8 members now. Member:[host: 192.168.86.1, port: 4008, id: 179.67.116.68.132.39.77.158.138.187.75.128.225.86.75.240, payload: Channel-1]; Thread:Thread-103, hash:795051670
+1507209126328 Listener-5:member added, has 8 members now. Member:[host: 192.168.86.1, port: 4008, id: 179.67.116.68.132.39.77.158.138.187.75.128.225.86.75.240, payload: Channel-1]; Thread:Thread-107, hash:2121049313
+1507209126328 Listener-7:member added, has 8 members now. Member:[host: 192.168.86.1, port: 4008, id: 179.67.116.68.132.39.77.158.138.187.75.128.225.86.75.240, payload: Channel-1]; Thread:Thread-109, hash:211884998
+1507209126328 Listener-10:member added, has 8 members now. Member:[host: 192.168.86.1, port: 4008, id: 179.67.116.68.132.39.77.158.138.187.75.128.225.86.75.240, payload: Channel-1]; Thread:Thread-108, hash:915744167
+1507209126328 Listener-9:member added, has 9 members now. Member:[host: 192.168.86.1, port: 4008, id: 179.67.116.68.132.39.77.158.138.187.75.128.225.86.75.240, payload: Channel-1]; Thread:Thread-110, hash:414253915
+1507209126328 Listener-2:member added, has 8 members now. Member:[host: 192.168.86.1, port: 4008, id: 179.67.116.68.132.39.77.158.138.187.75.128.225.86.75.240, payload: Channel-1]; Thread:Thread-102, hash:1785966807
+1507209126297 Listener-8:member added, has 7 members now. Member:[host: 192.168.86.1, port: 4007, id: 203.42.244.245.127.51.72.228.136.136.34.120.21.255.81.84, payload: Channel-5]; Thread:Thread-93, hash:1907444347
+1507209126297 Listener-1:member added, has 8 members now. Member:[host: 192.168.86.1, port: 4007, id: 203.42.244.245.127.51.72.228.136.136.34.120.21.255.81.84, payload: Channel-5]; Thread:Thread-100, hash:706350911
+1507209126297 Listener-10:member added, has 7 members now. Member:[host: 192.168.86.1, port: 4007, id: 203.42.244.245.127.51.72.228.136.136.34.120.21.255.81.84, payload: Channel-5]; Thread:Thread-96, hash:958804895
+1507209126297 Listener-3:member added, has 7 members now. Member:[host: 192.168.86.1, port: 4007, id: 203.42.244.245.127.51.72.228.136.136.34.120.21.255.81.84, payload: Channel-5]; Thread:Thread-97, hash:938463199
+1507209126297 Listener-2:member added, has 7 members now. Member:[host: 192.168.86.1, port: 4007, id: 203.42.244.245.127.51.72.228.136.136.34.120.21.255.81.84, payload: Channel-5]; Thread:Thread-92, hash:434956075
+1507209126360 Listener-8:member added, has 9 members now. Member:[host: 192.168.86.1, port: 4009, id: 97.81.98.188.147.211.79.79.156.242.117.167.184.209.236.4, payload: Channel-9]; Thread:Thread-111, hash:598363163
+1507209126360 Listener-6:member added, has 9 members now. Member:[host: 192.168.86.1, port: 4009, id: 97.81.98.188.147.211.79.79.156.242.117.167.184.209.236.4, payload: Channel-9]; Thread:Thread-117, hash:471132660
+1507209126360 Listener-5:member added, has 9 members now. Member:[host: 192.168.86.1, port: 4009, id: 97.81.98.188.147.211.79.79.156.242.117.167.184.209.236.4, payload: Channel-9]; Thread:Thread-115, hash:213018505
+1507209126360 Listener-3:member added, has 9 members now. Member:[host: 192.168.86.1, port: 4009, id: 97.81.98.188.147.211.79.79.156.242.117.167.184.209.236.4, payload: Channel-9]; Thread:Thread-114, hash:821048501
+1507209126360 Listener-2:member added, has 9 members now. Member:[host: 192.168.86.1, port: 4009, id: 97.81.98.188.147.211.79.79.156.242.117.167.184.209.236.4, payload: Channel-9]; Thread:Thread-112, hash:1773869724
+1507209126360 Listener-1:member added, has 9 members now. Member:[host: 192.168.86.1, port: 4009, id: 97.81.98.188.147.211.79.79.156.242.117.167.184.209.236.4, payload: Channel-9]; Thread:Thread-120, hash:712896725
+1507209126360 Listener-4:member added, has 9 members now. Member:[host: 192.168.86.1, port: 4009, id: 97.81.98.188.147.211.79.79.156.242.117.167.184.209.236.4, payload: Channel-9]; Thread:Thread-113, hash:1704746693
+1507209126360 Listener-7:member added, has 9 members now. Member:[host: 192.168.86.1, port: 4009, id: 97.81.98.188.147.211.79.79.156.242.117.167.184.209.236.4, payload: Channel-9]; Thread:Thread-119, hash:417346875
+1507209126360 Listener-10:member added, has 9 members now. Member:[host: 192.168.86.1, port: 4009, id: 97.81.98.188.147.211.79.79.156.242.117.167.184.209.236.4, payload: Channel-9]; Thread:Thread-118, hash:46134542
+1507209132381 All channels started.
+1507209132381 Members arrival counts checked.
+1507209132381 Listener-2:member disappeared, has 8 members now. Member:[host: 192.168.86.1, port: 4008, id: 179.67.116.68.132.39.77.158.138.187.75.128.225.86.75.240, payload: Channel-1]; Thread:Thread-132, hash:1124341532
+1507209132381 Listener-8:member disappeared, has 8 members now. Member:[host: 192.168.86.1, port: 4008, id: 179.67.116.68.132.39.77.158.138.187.75.128.225.86.75.240, payload: Channel-1]; Thread:Thread-136, hash:1127725643
+1507209132381 Listener-10:member disappeared, has 8 members now. Member:[host: 192.168.86.1, port: 4008, id: 179.67.116.68.132.39.77.158.138.187.75.128.225.86.75.240, payload: Channel-1]; Thread:Thread-131, hash:188323308
+1507209132381 Listener-4:member disappeared, has 8 members now. Member:[host: 192.168.86.1, port: 4008, id: 179.67.116.68.132.39.77.158.138.187.75.128.225.86.75.240, payload: Channel-1]; Thread:Thread-137, hash:1657039855
+1507209132381 Listener-3:member disappeared, has 8 members now. Member:[host: 192.168.86.1, port: 4008, id: 179.67.116.68.132.39.77.158.138.187.75.128.225.86.75.240, payload: Channel-1]; Thread:Thread-138, hash:1921460923
+1507209132381 Listener-9:member disappeared, has 8 members now. Member:[host: 192.168.86.1, port: 4008, id: 179.67.116.68.132.39.77.158.138.187.75.128.225.86.75.240, payload: Channel-1]; Thread:Thread-140, hash:141310491
+1507209132381 Listener-8:member disappeared, has 7 members now. Member:[host: 192.168.86.1, port: 4005, id: 49.182.68.21.62.126.78.216.136.34.221.56.223.124.77.152, payload: Channel-3]; Thread:Thread-148, hash:777498268
+1507209132381 Listener-6:member disappeared, has 8 members now. Member:[host: 192.168.86.1, port: 4008, id: 179.67.116.68.132.39.77.158.138.187.75.128.225.86.75.240, payload: Channel-1]; Thread:Thread-135, hash:1974663637
+1507209132397 Listener-10:member disappeared, has 5 members now. Member:[host: 192.168.86.1, port: 4005, id: 49.182.68.21.62.126.78.216.136.34.221.56.223.124.77.152, payload: Channel-3]; Thread:Thread-150, hash:1231402785
+1507209132381 Listener-8:member disappeared, has 5 members now. Member:[host: 192.168.86.1, port: 4003, id: 49.232.19.68.146.53.70.148.177.234.214.228.252.199.181.171, payload: Channel-4]; Thread:Thread-159, hash:103161917
+1507209132381 Listener-5:member disappeared, has 8 members now. Member:[host: 192.168.86.1, port: 4008, id: 179.67.116.68.132.39.77.158.138.187.75.128.225.86.75.240, payload: Channel-1]; Thread:Thread-139, hash:1040092795
+1507209132381 Listener-8:member disappeared, has 4 members now. Member:[host: 192.168.86.1, port: 4007, id: 203.42.244.245.127.51.72.228.136.136.34.120.21.255.81.84, payload: Channel-5]; Thread:Thread-160, hash:985924371
+1507209132381 Listener-5:member disappeared, has 7 members now. Member:[host: 192.168.86.1, port: 4000, id: 173.66.33.2.249.241.68.188.160.253.107.49.241.46.157.122, payload: Channel-2]; Thread:Thread-147, hash:689245608
+1507209132381 Listener-4:member disappeared, has 7 members now. Member:[host: 192.168.86.1, port: 4000, id: 173.66.33.2.249.241.68.188.160.253.107.49.241.46.157.122, payload: Channel-2]; Thread:Thread-144, hash:2121614923
+1507209132381 Listener-8:member disappeared, has 6 members now. Member:[host: 192.168.86.1, port: 4000, id: 173.66.33.2.249.241.68.188.160.253.107.49.241.46.157.122, payload: Channel-2]; Thread:Thread-143, hash:1397054308
+1507209132381 Listener-9:member disappeared, has 6 members now. Member:[host: 192.168.86.1, port: 4003, id: 49.232.19.68.146.53.70.148.177.234.214.228.252.199.181.171, payload: Channel-4]; Thread:Thread-162, hash:871056984
+1507209132381 Listener-9:member disappeared, has 5 members now. Member:[host: 192.168.86.1, port: 4007, id: 203.42.244.245.127.51.72.228.136.136.34.120.21.255.81.84, payload: Channel-5]; Thread:Thread-163, hash:824840898
+1507209132381 Listener-9:member disappeared, has 7 members now. Member:[host: 192.168.86.1, port: 4000, id: 173.66.33.2.249.241.68.188.160.253.107.49.241.46.157.122, payload: Channel-2]; Thread:Thread-146, hash:2146016366
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+Okt 05, 2017 3:12:05 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4000
+Okt 05, 2017 3:12:05 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4001
+Okt 05, 2017 3:12:05 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:12:05 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:12:05 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:12:05 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:12:05 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4002
+Okt 05, 2017 3:12:05 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:12:05 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:12:05 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4003
+Okt 05, 2017 3:12:05 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:12:05 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:12:05 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4004
+Okt 05, 2017 3:12:05 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:12:05 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:12:05 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4005
+Okt 05, 2017 3:12:05 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:12:05 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:12:05 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4006
+Okt 05, 2017 3:12:05 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:12:05 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:12:05 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4007
+Okt 05, 2017 3:12:05 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:12:05 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:12:05 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4008
+Okt 05, 2017 3:12:05 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:12:05 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:12:05 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4009
+Okt 05, 2017 3:12:05 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:12:05 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:12:06 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:12:06 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:12:06 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:12:06 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:12:06 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:12:06 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:12:06 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:12:06 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:12:06 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:12:06 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:12:06 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:12:06 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:12:06 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:12:06 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:12:06 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:12:06 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:12:06 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:12:06 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:12:06 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:12:06 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:12:07 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:12:07 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:12:07 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:12:07 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:12:07 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:12:07 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:12:07 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:12:07 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:12:07 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:12:07 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:12:12 PM org.apache.catalina.tribes.membership.McastServiceImpl$ReceiverThread run
+WARNUNG: Error receiving mcast package. Sleeping 500ms
+java.net.SocketException: socket closed
+	at java.net.TwoStacksPlainDatagramSocketImpl.receive0(Native Method)
+	at java.net.TwoStacksPlainDatagramSocketImpl.receive(TwoStacksPlainDatagramSocketImpl.java:114)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at org.apache.catalina.tribes.membership.McastServiceImpl.receive(McastServiceImpl.java:314)
+	at org.apache.catalina.tribes.membership.McastServiceImpl$ReceiverThread.run(McastServiceImpl.java:414)
+
+Okt 05, 2017 3:12:12 PM org.apache.catalina.tribes.membership.McastServiceImpl$ReceiverThread run
+WARNUNG: Error receiving mcast package. Sleeping 500ms
+java.net.SocketException: socket closed
+	at java.net.TwoStacksPlainDatagramSocketImpl.receive0(Native Method)
+	at java.net.TwoStacksPlainDatagramSocketImpl.receive(TwoStacksPlainDatagramSocketImpl.java:114)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at org.apache.catalina.tribes.membership.McastServiceImpl.receive(McastServiceImpl.java:314)
+	at org.apache.catalina.tribes.membership.McastServiceImpl$ReceiverThread.run(McastServiceImpl.java:414)
+
+Okt 05, 2017 3:12:12 PM org.apache.catalina.tribes.membership.McastServiceImpl$ReceiverThread run
+WARNUNG: Error receiving mcast package. Sleeping 500ms
+java.net.SocketException: socket closed
+	at java.net.TwoStacksPlainDatagramSocketImpl.receive0(Native Method)
+	at java.net.TwoStacksPlainDatagramSocketImpl.receive(TwoStacksPlainDatagramSocketImpl.java:114)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at org.apache.catalina.tribes.membership.McastServiceImpl.receive(McastServiceImpl.java:314)
+	at org.apache.catalina.tribes.membership.McastServiceImpl$ReceiverThread.run(McastServiceImpl.java:414)
+
+------------- ---------------- ---------------
+
+Testcase: testMemberArrival took 7,589 sec

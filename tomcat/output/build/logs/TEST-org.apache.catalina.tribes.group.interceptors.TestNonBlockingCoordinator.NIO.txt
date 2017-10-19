@@ -1,0 +1,634 @@
+Testsuite: org.apache.catalina.tribes.group.interceptors.TestNonBlockingCoordinator
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10,996 sec
+------------- Standard Output ---------------
+Setup
+Coordinator[1] is:org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4000,{192, 168, 86, 1},4000, alive=1545,id={-88 42 -12 4 -6 12 73 -111 -69 -109 77 -128 112 61 -124 -117 }, payload={}, command={}, domain={-47 87 96 65 -39 88 78 -91 -99 ...(16)}, ]
+tearDown
+Setup
+Coordinator[2a] is:org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4000,{192, 168, 86, 1},4000, alive=1512,id={-74 -79 -94 39 -41 -34 74 -24 -75 -73 -55 -63 80 -98 54 2 }, payload={}, command={}, domain={-101 -89 -8 123 -77 -35 79 -52 -71 ...(16)}, ]
+Shutting down:org.apache.catalina.tribes.membership.MemberImpl[tcp://192.168.86.1:4000,192.168.86.1,4000, alive=2280,id={-74 -79 -94 39 -41 -34 74 -24 -75 -73 -55 -63 80 -98 54 2 }, payload={}, command={}, domain={-101 -89 -8 123 -77 -35 79 -52 -71 ...(16)}, ]
+Member count:8
+Coordinator[2b] is:org.apache.catalina.tribes.membership.MemberImpl[tcp://192.168.86.1:4001,192.168.86.1,4001, alive=1001,id={69 -47 -79 27 63 126 73 4 -101 18 13 -57 28 61 67 124 }, payload={}, command={}, domain={-101 -89 -8 123 -77 -35 79 -52 -71 ...(16)}, ]
+tearDown
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+Okt 05, 2017 3:16:27 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4000
+Okt 05, 2017 3:16:27 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4001
+Okt 05, 2017 3:16:27 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:16:27 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:16:27 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:16:27 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:16:27 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4002
+Okt 05, 2017 3:16:27 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:16:27 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:16:27 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4003
+Okt 05, 2017 3:16:27 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:16:27 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:16:27 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4004
+Okt 05, 2017 3:16:27 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:16:27 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:16:27 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4005
+Okt 05, 2017 3:16:27 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:16:27 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:16:27 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4006
+Okt 05, 2017 3:16:27 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:16:27 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:16:27 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4007
+Okt 05, 2017 3:16:27 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:16:27 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:16:27 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4008
+Okt 05, 2017 3:16:27 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:16:27 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:16:27 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4009
+Okt 05, 2017 3:16:27 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:16:27 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:16:28 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:16:28 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:16:28 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:16:28 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:16:28 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:16:28 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:16:28 PM org.apache.catalina.tribes.io.BufferPool getBufferPool
+INFORMATION: Created a buffer pool with max size:104857600 bytes of type:org.apache.catalina.tribes.io.BufferPool15Impl
+Okt 05, 2017 3:16:28 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:16:28 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:16:28 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:16:28 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:16:28 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:16:28 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:16:28 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:16:28 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:16:28 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:16:28 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:16:28 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:16:28 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:16:28 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:16:28 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:16:29 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:16:29 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:16:29 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:16:29 PM org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator fireInterceptorEvent
+INFORMATION: CoordinationEvent[type=12
+	Local:tcp://192.168.86.1:4007
+	Coord:tcp://{192, 168, 86, 1}:4000
+	View:{tcp://{192, 168, 86, 1}:4000, tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://192.168.86.1:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Suggested View:{}
+	Members:{tcp://{192, 168, 86, 1}:4000, tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Info:Accepted View]
+Okt 05, 2017 3:16:29 PM org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator fireInterceptorEvent
+INFORMATION: CoordinationEvent[type=12
+	Local:tcp://192.168.86.1:4003
+	Coord:tcp://{192, 168, 86, 1}:4000
+	View:{tcp://{192, 168, 86, 1}:4000, tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://192.168.86.1:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Suggested View:{}
+	Members:{tcp://{192, 168, 86, 1}:4000, tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Info:Accepted View]
+Okt 05, 2017 3:16:29 PM org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator fireInterceptorEvent
+INFORMATION: CoordinationEvent[type=12
+	Local:tcp://192.168.86.1:4005
+	Coord:tcp://{192, 168, 86, 1}:4000
+	View:{tcp://{192, 168, 86, 1}:4000, tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://192.168.86.1:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Suggested View:{}
+	Members:{tcp://{192, 168, 86, 1}:4000, tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Info:Accepted View]
+Okt 05, 2017 3:16:29 PM org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator fireInterceptorEvent
+INFORMATION: CoordinationEvent[type=12
+	Local:tcp://192.168.86.1:4001
+	Coord:tcp://{192, 168, 86, 1}:4000
+	View:{tcp://{192, 168, 86, 1}:4000, tcp://192.168.86.1:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Suggested View:{}
+	Members:{tcp://{192, 168, 86, 1}:4000, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Info:Accepted View]
+Okt 05, 2017 3:16:29 PM org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator fireInterceptorEvent
+INFORMATION: CoordinationEvent[type=12
+	Local:tcp://192.168.86.1:4008
+	Coord:tcp://{192, 168, 86, 1}:4000
+	View:{tcp://{192, 168, 86, 1}:4000, tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://192.168.86.1:4008, tcp://{192, 168, 86, 1}:4009}
+	Suggested View:{}
+	Members:{tcp://{192, 168, 86, 1}:4000, tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4009}
+	Info:Accepted View]
+Okt 05, 2017 3:16:29 PM org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator fireInterceptorEvent
+INFORMATION: CoordinationEvent[type=12
+	Local:tcp://192.168.86.1:4006
+	Coord:tcp://{192, 168, 86, 1}:4000
+	View:{tcp://{192, 168, 86, 1}:4000, tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://192.168.86.1:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Suggested View:{}
+	Members:{tcp://{192, 168, 86, 1}:4000, tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Info:Accepted View]
+Okt 05, 2017 3:16:29 PM org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator fireInterceptorEvent
+INFORMATION: CoordinationEvent[type=12
+	Local:tcp://192.168.86.1:4004
+	Coord:tcp://{192, 168, 86, 1}:4000
+	View:{tcp://{192, 168, 86, 1}:4000, tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://192.168.86.1:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Suggested View:{}
+	Members:{tcp://{192, 168, 86, 1}:4000, tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Info:Accepted View]
+Okt 05, 2017 3:16:29 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:16:29 PM org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator fireInterceptorEvent
+INFORMATION: CoordinationEvent[type=12
+	Local:tcp://192.168.86.1:4002
+	Coord:tcp://{192, 168, 86, 1}:4000
+	View:{tcp://{192, 168, 86, 1}:4000, tcp://{192, 168, 86, 1}:4001, tcp://192.168.86.1:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Suggested View:{}
+	Members:{tcp://{192, 168, 86, 1}:4000, tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Info:Accepted View]
+Okt 05, 2017 3:16:29 PM org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator fireInterceptorEvent
+INFORMATION: CoordinationEvent[type=12
+	Local:tcp://192.168.86.1:4009
+	Coord:tcp://{192, 168, 86, 1}:4000
+	View:{tcp://{192, 168, 86, 1}:4000, tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://192.168.86.1:4009}
+	Suggested View:{}
+	Members:{tcp://{192, 168, 86, 1}:4000, tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008}
+	Info:Accepted View]
+Okt 05, 2017 3:16:29 PM org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator fireInterceptorEvent
+INFORMATION: CoordinationEvent[type=12
+	Local:tcp://192.168.86.1:4000
+	Coord:tcp://192.168.86.1:4000
+	View:{tcp://192.168.86.1:4000, tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Suggested View:{}
+	Members:{tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Info:Accepted View]
+Okt 05, 2017 3:16:29 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:16:29 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:16:29 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:16:29 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:16:29 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:16:29 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:16:30 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4005,{192, 168, 86, 1},4005, alive=3206,id={-11 -13 -96 16 70 -97 66 115 -118 -9 -34 54 45 -13 -6 124 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={-47 87 96 65 -39 88 78 -91 -99 ...(16)}, ]]
+Okt 05, 2017 3:16:30 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4005,{192, 168, 86, 1},4005, alive=3206,id={-11 -13 -96 16 70 -97 66 115 -118 -9 -34 54 45 -13 -6 124 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={-47 87 96 65 -39 88 78 -91 -99 ...(16)}, ]]
+Okt 05, 2017 3:16:30 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4005,{192, 168, 86, 1},4005, alive=3206,id={-11 -13 -96 16 70 -97 66 115 -118 -9 -34 54 45 -13 -6 124 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={-47 87 96 65 -39 88 78 -91 -99 ...(16)}, ]]
+Okt 05, 2017 3:16:30 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4005,{192, 168, 86, 1},4005, alive=3206,id={-11 -13 -96 16 70 -97 66 115 -118 -9 -34 54 45 -13 -6 124 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={-47 87 96 65 -39 88 78 -91 -99 ...(16)}, ]]
+Okt 05, 2017 3:16:30 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4005,{192, 168, 86, 1},4005, alive=3206,id={-11 -13 -96 16 70 -97 66 115 -118 -9 -34 54 45 -13 -6 124 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={-47 87 96 65 -39 88 78 -91 -99 ...(16)}, ]]
+Okt 05, 2017 3:16:30 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4005,{192, 168, 86, 1},4005, alive=3206,id={-11 -13 -96 16 70 -97 66 115 -118 -9 -34 54 45 -13 -6 124 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={-47 87 96 65 -39 88 78 -91 -99 ...(16)}, ]]
+Okt 05, 2017 3:16:30 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4005,{192, 168, 86, 1},4005, alive=3206,id={-11 -13 -96 16 70 -97 66 115 -118 -9 -34 54 45 -13 -6 124 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={-47 87 96 65 -39 88 78 -91 -99 ...(16)}, ]]
+Okt 05, 2017 3:16:30 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4005,{192, 168, 86, 1},4005, alive=3206,id={-11 -13 -96 16 70 -97 66 115 -118 -9 -34 54 45 -13 -6 124 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={-47 87 96 65 -39 88 78 -91 -99 ...(16)}, ]]
+Okt 05, 2017 3:16:30 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4000,{192, 168, 86, 1},4000, alive=3323,id={-88 42 -12 4 -6 12 73 -111 -69 -109 77 -128 112 61 -124 -117 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={-47 87 96 65 -39 88 78 -91 -99 ...(16)}, ]]
+Okt 05, 2017 3:16:30 PM org.apache.catalina.tribes.membership.McastServiceImpl$ReceiverThread run
+WARNUNG: Error receiving mcast package. Sleeping 500ms
+java.net.SocketException: socket closed
+	at java.net.TwoStacksPlainDatagramSocketImpl.receive0(Native Method)
+	at java.net.TwoStacksPlainDatagramSocketImpl.receive(TwoStacksPlainDatagramSocketImpl.java:114)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at org.apache.catalina.tribes.membership.McastServiceImpl.receive(McastServiceImpl.java:314)
+	at org.apache.catalina.tribes.membership.McastServiceImpl$ReceiverThread.run(McastServiceImpl.java:414)
+
+Okt 05, 2017 3:16:30 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4001
+Okt 05, 2017 3:16:30 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:16:30 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:16:30 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4000
+Okt 05, 2017 3:16:30 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:16:30 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:16:30 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4002
+Okt 05, 2017 3:16:30 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:16:30 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:16:30 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4003
+Okt 05, 2017 3:16:30 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:16:30 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:16:30 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4004
+Okt 05, 2017 3:16:30 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:16:30 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:16:30 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4005
+Okt 05, 2017 3:16:30 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:16:30 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:16:31 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4006
+Okt 05, 2017 3:16:31 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:16:31 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:16:31 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4007
+Okt 05, 2017 3:16:31 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:16:31 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:16:31 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4008
+Okt 05, 2017 3:16:31 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:16:31 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:16:31 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4009
+Okt 05, 2017 3:16:31 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:16:31 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:16:31 PM org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator sendElectionMsgToNextInline
+WARNUNG: Unable to send election message to:org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4004,{192, 168, 86, 1},4004, alive=1507209390670,id={85 72 -33 83 71 -60 64 -120 -127 -115 123 -71 91 112 106 107 }, payload={}, command={}, domain={-47 87 96 65 -39 88 78 -91 -99 ...(16)}, ]
+Okt 05, 2017 3:16:31 PM org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator sendElectionMsgToNextInline
+WARNUNG: Unable to send election message to:org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4005,{192, 168, 86, 1},4005, alive=1507209390686,id={-11 -13 -96 16 70 -97 66 115 -118 -9 -34 54 45 -13 -6 124 }, payload={}, command={}, domain={-47 87 96 65 -39 88 78 -91 -99 ...(16)}, ]
+Okt 05, 2017 3:16:31 PM org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator sendElectionMsgToNextInline
+WARNUNG: Unable to send election message to:org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4006,{192, 168, 86, 1},4006, alive=1507209390717,id={-30 45 -16 110 8 -72 66 124 -116 -16 71 -47 91 -61 -77 85 }, payload={}, command={}, domain={-47 87 96 65 -39 88 78 -91 -99 ...(16)}, ]
+Okt 05, 2017 3:16:31 PM org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator sendElectionMsgToNextInline
+WARNUNG: Unable to send election message to:org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4007,{192, 168, 86, 1},4007, alive=1507209390748,id={-83 83 17 43 -10 77 68 -65 -98 -67 -4 50 124 66 38 -75 }, payload={}, command={}, domain={-47 87 96 65 -39 88 78 -91 -99 ...(16)}, ]
+Okt 05, 2017 3:16:31 PM org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator sendElectionMsgToNextInline
+WARNUNG: Unable to send election message to:org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4008,{192, 168, 86, 1},4008, alive=1507209390764,id={-36 -96 11 -40 -50 87 71 -69 -71 -101 108 2 -109 127 76 -101 }, payload={}, command={}, domain={-47 87 96 65 -39 88 78 -91 -99 ...(16)}, ]
+Okt 05, 2017 3:16:31 PM org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator sendElectionMsgToNextInline
+WARNUNG: Unable to send election message to:org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4009,{192, 168, 86, 1},4009, alive=1507209390795,id={-8 -20 20 -93 121 -128 76 46 -100 8 -114 -104 -51 89 -10 -115 }, payload={}, command={}, domain={-47 87 96 65 -39 88 78 -91 -99 ...(16)}, ]
+Okt 05, 2017 3:16:31 PM org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator sendElectionMsgToNextInline
+WARNUNG: Unable to send election message to:org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4000,{192, 168, 86, 1},4000, alive=3089,id={-88 42 -12 4 -6 12 73 -111 -69 -109 77 -128 112 61 -124 -117 }, payload={}, command={}, domain={-47 87 96 65 -39 88 78 -91 -99 ...(16)}, ]
+Okt 05, 2017 3:16:31 PM org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator sendElectionMsgToNextInline
+WARNUNG: Unable to send election message to:org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4001,{192, 168, 86, 1},4001, alive=3072,id={-48 21 106 -78 -93 19 66 23 -85 -49 0 94 -86 59 55 -90 }, payload={}, command={}, domain={-47 87 96 65 -39 88 78 -91 -99 ...(16)}, ]
+Okt 05, 2017 3:16:31 PM org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator sendElectionMsgToNextInline
+WARNUNG: Unable to send election message to:org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4002,{192, 168, 86, 1},4002, alive=3079,id={-5 -104 119 -35 -25 -6 71 -52 -114 -85 -115 -15 4 -103 -99 -7 }, payload={}, command={}, domain={-47 87 96 65 -39 88 78 -91 -99 ...(16)}, ]
+Okt 05, 2017 3:16:31 PM org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator sendElectionMsgToNextInline
+WARNUNG: Unable to send election message to:org.apache.catalina.tribes.membership.MemberImpl[tcp://192.168.86.1:4003,192.168.86.1,4003, alive=963,id={45 114 -87 -82 -105 -67 74 93 -90 36 9 -107 -73 29 -85 -96 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={-47 87 96 65 -39 88 78 -91 -99 ...(16)}, ]
+Okt 05, 2017 3:16:31 PM org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator messageReceived
+SCHWERWIEGEND: Error processing coordination message. Could be fatal.
+org.apache.catalina.tribes.ChannelException: Sender not connected.; No faulty members identified.
+	at org.apache.catalina.tribes.transport.nio.PooledParallelSender.sendMessage(PooledParallelSender.java:45)
+	at org.apache.catalina.tribes.transport.ReplicationTransmitter.sendMessage(ReplicationTransmitter.java:80)
+	at org.apache.catalina.tribes.group.ChannelCoordinator.sendMessage(ChannelCoordinator.java:76)
+	at org.apache.catalina.tribes.group.ChannelInterceptorBase.sendMessage(ChannelInterceptorBase.java:75)
+	at org.apache.catalina.tribes.group.ChannelInterceptorBase.sendMessage(ChannelInterceptorBase.java:75)
+	at org.apache.catalina.tribes.group.interceptors.TcpFailureDetector.sendMessage(TcpFailureDetector.java:88)
+	at org.apache.catalina.tribes.group.ChannelInterceptorBase.sendMessage(ChannelInterceptorBase.java:75)
+	at org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator.sendElectionMsg(NonBlockingCoordinator.java:250)
+	at org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator.sendElectionMsgToNextInline(NonBlockingCoordinator.java:260)
+	at org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator.handleOtherToken(NonBlockingCoordinator.java:370)
+	at org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator.handleToken(NonBlockingCoordinator.java:336)
+	at org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator.processCoordMessage(NonBlockingCoordinator.java:325)
+	at org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator.messageReceived(NonBlockingCoordinator.java:500)
+	at org.apache.catalina.tribes.group.ChannelInterceptorBase.messageReceived(ChannelInterceptorBase.java:79)
+	at org.apache.catalina.tribes.group.interceptors.TcpFailureDetector.messageReceived(TcpFailureDetector.java:111)
+	at org.apache.catalina.tribes.group.ChannelInterceptorBase.messageReceived(ChannelInterceptorBase.java:79)
+	at org.apache.catalina.tribes.group.interceptors.DomainFilterInterceptor.messageReceived(DomainFilterInterceptor.java:44)
+	at org.apache.catalina.tribes.group.ChannelInterceptorBase.messageReceived(ChannelInterceptorBase.java:79)
+	at org.apache.catalina.tribes.group.ChannelCoordinator.messageReceived(ChannelCoordinator.java:239)
+	at org.apache.catalina.tribes.transport.ReceiverBase.messageDataReceived(ReceiverBase.java:211)
+	at org.apache.catalina.tribes.transport.nio.NioReplicationTask.drainChannel(NioReplicationTask.java:188)
+	at org.apache.catalina.tribes.transport.nio.NioReplicationTask.run(NioReplicationTask.java:91)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+Okt 05, 2017 3:16:31 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:16:31 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:16:31 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:16:31 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:16:31 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:16:31 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:16:31 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:16:31 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:16:31 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:16:31 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:16:31 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:16:31 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:16:32 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:16:32 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:16:32 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:16:32 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:16:32 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:16:32 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:16:32 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:16:32 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:16:32 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:16:32 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:16:32 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:16:32 PM org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator fireInterceptorEvent
+INFORMATION: CoordinationEvent[type=12
+	Local:tcp://192.168.86.1:4001
+	Coord:tcp://{192, 168, 86, 1}:4000
+	View:{tcp://{192, 168, 86, 1}:4000, tcp://192.168.86.1:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Suggested View:{}
+	Members:{tcp://{192, 168, 86, 1}:4000, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Info:Accepted View]
+Okt 05, 2017 3:16:32 PM org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator fireInterceptorEvent
+INFORMATION: CoordinationEvent[type=12
+	Local:tcp://192.168.86.1:4005
+	Coord:tcp://{192, 168, 86, 1}:4000
+	View:{tcp://{192, 168, 86, 1}:4000, tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://192.168.86.1:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Suggested View:{}
+	Members:{tcp://{192, 168, 86, 1}:4000, tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Info:Accepted View]
+Okt 05, 2017 3:16:32 PM org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator fireInterceptorEvent
+INFORMATION: CoordinationEvent[type=12
+	Local:tcp://192.168.86.1:4009
+	Coord:tcp://{192, 168, 86, 1}:4000
+	View:{tcp://{192, 168, 86, 1}:4000, tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://192.168.86.1:4009}
+	Suggested View:{}
+	Members:{tcp://{192, 168, 86, 1}:4000, tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008}
+	Info:Accepted View]
+Okt 05, 2017 3:16:32 PM org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator fireInterceptorEvent
+INFORMATION: CoordinationEvent[type=12
+	Local:tcp://192.168.86.1:4006
+	Coord:tcp://{192, 168, 86, 1}:4000
+	View:{tcp://{192, 168, 86, 1}:4000, tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://192.168.86.1:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Suggested View:{}
+	Members:{tcp://{192, 168, 86, 1}:4000, tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Info:Accepted View]
+Okt 05, 2017 3:16:32 PM org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator fireInterceptorEvent
+INFORMATION: CoordinationEvent[type=12
+	Local:tcp://192.168.86.1:4004
+	Coord:tcp://{192, 168, 86, 1}:4000
+	View:{tcp://{192, 168, 86, 1}:4000, tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://192.168.86.1:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Suggested View:{}
+	Members:{tcp://{192, 168, 86, 1}:4000, tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Info:Accepted View]
+Okt 05, 2017 3:16:32 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:16:32 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:16:32 PM org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator fireInterceptorEvent
+INFORMATION: CoordinationEvent[type=12
+	Local:tcp://192.168.86.1:4003
+	Coord:tcp://{192, 168, 86, 1}:4000
+	View:{tcp://{192, 168, 86, 1}:4000, tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://192.168.86.1:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Suggested View:{}
+	Members:{tcp://{192, 168, 86, 1}:4000, tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Info:Accepted View]
+Okt 05, 2017 3:16:32 PM org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator fireInterceptorEvent
+INFORMATION: CoordinationEvent[type=12
+	Local:tcp://192.168.86.1:4000
+	Coord:tcp://192.168.86.1:4000
+	View:{tcp://192.168.86.1:4000, tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Suggested View:{}
+	Members:{tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Info:Accepted View]
+Okt 05, 2017 3:16:32 PM org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator fireInterceptorEvent
+INFORMATION: CoordinationEvent[type=12
+	Local:tcp://192.168.86.1:4008
+	Coord:tcp://{192, 168, 86, 1}:4000
+	View:{tcp://{192, 168, 86, 1}:4000, tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://192.168.86.1:4008, tcp://{192, 168, 86, 1}:4009}
+	Suggested View:{}
+	Members:{tcp://{192, 168, 86, 1}:4000, tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4009}
+	Info:Accepted View]
+Okt 05, 2017 3:16:32 PM org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator fireInterceptorEvent
+INFORMATION: CoordinationEvent[type=12
+	Local:tcp://192.168.86.1:4007
+	Coord:tcp://{192, 168, 86, 1}:4000
+	View:{tcp://{192, 168, 86, 1}:4000, tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://192.168.86.1:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Suggested View:{}
+	Members:{tcp://{192, 168, 86, 1}:4000, tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Info:Accepted View]
+Okt 05, 2017 3:16:32 PM org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator fireInterceptorEvent
+INFORMATION: CoordinationEvent[type=12
+	Local:tcp://192.168.86.1:4002
+	Coord:tcp://{192, 168, 86, 1}:4000
+	View:{tcp://{192, 168, 86, 1}:4000, tcp://{192, 168, 86, 1}:4001, tcp://192.168.86.1:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Suggested View:{}
+	Members:{tcp://{192, 168, 86, 1}:4000, tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Info:Accepted View]
+Okt 05, 2017 3:16:32 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:16:33 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:16:33 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:16:33 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:16:33 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:16:34 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4000,{192, 168, 86, 1},4000, alive=3290,id={-74 -79 -94 39 -41 -34 74 -24 -75 -73 -55 -63 80 -98 54 2 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={-101 -89 -8 123 -77 -35 79 -52 -71 ...(16)}, ]]
+Okt 05, 2017 3:16:34 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4000,{192, 168, 86, 1},4000, alive=3290,id={-74 -79 -94 39 -41 -34 74 -24 -75 -73 -55 -63 80 -98 54 2 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={-101 -89 -8 123 -77 -35 79 -52 -71 ...(16)}, ]]
+Okt 05, 2017 3:16:34 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4000,{192, 168, 86, 1},4000, alive=3290,id={-74 -79 -94 39 -41 -34 74 -24 -75 -73 -55 -63 80 -98 54 2 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={-101 -89 -8 123 -77 -35 79 -52 -71 ...(16)}, ]]
+Okt 05, 2017 3:16:34 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4000,{192, 168, 86, 1},4000, alive=3290,id={-74 -79 -94 39 -41 -34 74 -24 -75 -73 -55 -63 80 -98 54 2 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={-101 -89 -8 123 -77 -35 79 -52 -71 ...(16)}, ]]
+Okt 05, 2017 3:16:34 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4000,{192, 168, 86, 1},4000, alive=3290,id={-74 -79 -94 39 -41 -34 74 -24 -75 -73 -55 -63 80 -98 54 2 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={-101 -89 -8 123 -77 -35 79 -52 -71 ...(16)}, ]]
+Okt 05, 2017 3:16:34 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4000,{192, 168, 86, 1},4000, alive=3290,id={-74 -79 -94 39 -41 -34 74 -24 -75 -73 -55 -63 80 -98 54 2 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={-101 -89 -8 123 -77 -35 79 -52 -71 ...(16)}, ]]
+Okt 05, 2017 3:16:34 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4000,{192, 168, 86, 1},4000, alive=3290,id={-74 -79 -94 39 -41 -34 74 -24 -75 -73 -55 -63 80 -98 54 2 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={-101 -89 -8 123 -77 -35 79 -52 -71 ...(16)}, ]]
+Okt 05, 2017 3:16:34 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4000,{192, 168, 86, 1},4000, alive=3290,id={-74 -79 -94 39 -41 -34 74 -24 -75 -73 -55 -63 80 -98 54 2 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={-101 -89 -8 123 -77 -35 79 -52 -71 ...(16)}, ]]
+Okt 05, 2017 3:16:34 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4000,{192, 168, 86, 1},4000, alive=3290,id={-74 -79 -94 39 -41 -34 74 -24 -75 -73 -55 -63 80 -98 54 2 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={-101 -89 -8 123 -77 -35 79 -52 -71 ...(16)}, ]]
+Okt 05, 2017 3:16:34 PM org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator fireInterceptorEvent
+INFORMATION: CoordinationEvent[type=12
+	Local:tcp://192.168.86.1:4004
+	Coord:tcp://{192, 168, 86, 1}:4001
+	View:{tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://192.168.86.1:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Suggested View:{}
+	Members:{tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Info:Accepted View]
+Okt 05, 2017 3:16:34 PM org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator fireInterceptorEvent
+INFORMATION: CoordinationEvent[type=12
+	Local:tcp://192.168.86.1:4007
+	Coord:tcp://{192, 168, 86, 1}:4001
+	View:{tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://192.168.86.1:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Suggested View:{}
+	Members:{tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Info:Accepted View]
+Okt 05, 2017 3:16:34 PM org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator fireInterceptorEvent
+INFORMATION: CoordinationEvent[type=12
+	Local:tcp://192.168.86.1:4001
+	Coord:tcp://192.168.86.1:4001
+	View:{tcp://192.168.86.1:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Suggested View:{}
+	Members:{tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Info:Accepted View]
+Okt 05, 2017 3:16:34 PM org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator fireInterceptorEvent
+INFORMATION: CoordinationEvent[type=12
+	Local:tcp://192.168.86.1:4005
+	Coord:tcp://{192, 168, 86, 1}:4001
+	View:{tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://192.168.86.1:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Suggested View:{}
+	Members:{tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Info:Accepted View]
+Okt 05, 2017 3:16:34 PM org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator fireInterceptorEvent
+INFORMATION: CoordinationEvent[type=12
+	Local:tcp://192.168.86.1:4003
+	Coord:tcp://{192, 168, 86, 1}:4001
+	View:{tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://192.168.86.1:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Suggested View:{}
+	Members:{tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Info:Accepted View]
+Okt 05, 2017 3:16:34 PM org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator fireInterceptorEvent
+INFORMATION: CoordinationEvent[type=12
+	Local:tcp://192.168.86.1:4008
+	Coord:tcp://{192, 168, 86, 1}:4001
+	View:{tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://192.168.86.1:4008, tcp://{192, 168, 86, 1}:4009}
+	Suggested View:{}
+	Members:{tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4009}
+	Info:Accepted View]
+Okt 05, 2017 3:16:34 PM org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator fireInterceptorEvent
+INFORMATION: CoordinationEvent[type=12
+	Local:tcp://192.168.86.1:4006
+	Coord:tcp://{192, 168, 86, 1}:4001
+	View:{tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://192.168.86.1:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Suggested View:{}
+	Members:{tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Info:Accepted View]
+Okt 05, 2017 3:16:34 PM org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator fireInterceptorEvent
+INFORMATION: CoordinationEvent[type=12
+	Local:tcp://192.168.86.1:4002
+	Coord:tcp://{192, 168, 86, 1}:4001
+	View:{tcp://{192, 168, 86, 1}:4001, tcp://192.168.86.1:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Suggested View:{}
+	Members:{tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://{192, 168, 86, 1}:4009}
+	Info:Accepted View]
+Okt 05, 2017 3:16:34 PM org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator fireInterceptorEvent
+INFORMATION: CoordinationEvent[type=12
+	Local:tcp://192.168.86.1:4009
+	Coord:tcp://{192, 168, 86, 1}:4001
+	View:{tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008, tcp://192.168.86.1:4009}
+	Suggested View:{}
+	Members:{tcp://{192, 168, 86, 1}:4001, tcp://{192, 168, 86, 1}:4002, tcp://{192, 168, 86, 1}:4003, tcp://{192, 168, 86, 1}:4004, tcp://{192, 168, 86, 1}:4005, tcp://{192, 168, 86, 1}:4006, tcp://{192, 168, 86, 1}:4007, tcp://{192, 168, 86, 1}:4008}
+	Info:Accepted View]
+Okt 05, 2017 3:16:35 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4001,{192, 168, 86, 1},4001, alive=4310,id={69 -47 -79 27 63 126 73 4 -101 18 13 -57 28 61 67 124 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={-101 -89 -8 123 -77 -35 79 -52 -71 ...(16)}, ]]
+Okt 05, 2017 3:16:35 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4001,{192, 168, 86, 1},4001, alive=4310,id={69 -47 -79 27 63 126 73 4 -101 18 13 -57 28 61 67 124 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={-101 -89 -8 123 -77 -35 79 -52 -71 ...(16)}, ]]
+Okt 05, 2017 3:16:35 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4001,{192, 168, 86, 1},4001, alive=4310,id={69 -47 -79 27 63 126 73 4 -101 18 13 -57 28 61 67 124 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={-101 -89 -8 123 -77 -35 79 -52 -71 ...(16)}, ]]
+Okt 05, 2017 3:16:35 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4001,{192, 168, 86, 1},4001, alive=4310,id={69 -47 -79 27 63 126 73 4 -101 18 13 -57 28 61 67 124 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={-101 -89 -8 123 -77 -35 79 -52 -71 ...(16)}, ]]
+Okt 05, 2017 3:16:35 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4001,{192, 168, 86, 1},4001, alive=4310,id={69 -47 -79 27 63 126 73 4 -101 18 13 -57 28 61 67 124 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={-101 -89 -8 123 -77 -35 79 -52 -71 ...(16)}, ]]
+Okt 05, 2017 3:16:35 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4001,{192, 168, 86, 1},4001, alive=4310,id={69 -47 -79 27 63 126 73 4 -101 18 13 -57 28 61 67 124 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={-101 -89 -8 123 -77 -35 79 -52 -71 ...(16)}, ]]
+Okt 05, 2017 3:16:35 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4001,{192, 168, 86, 1},4001, alive=4310,id={69 -47 -79 27 63 126 73 4 -101 18 13 -57 28 61 67 124 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={-101 -89 -8 123 -77 -35 79 -52 -71 ...(16)}, ]]
+Okt 05, 2017 3:16:35 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4001,{192, 168, 86, 1},4001, alive=4310,id={69 -47 -79 27 63 126 73 4 -101 18 13 -57 28 61 67 124 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={-101 -89 -8 123 -77 -35 79 -52 -71 ...(16)}, ]]
+Okt 05, 2017 3:16:35 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4005,{192, 168, 86, 1},4005, alive=4219,id={51 109 -38 -102 117 108 68 -96 -121 -107 7 -44 -103 -112 -30 120 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={-101 -89 -8 123 -77 -35 79 -52 -71 ...(16)}, ]]
+Okt 05, 2017 3:16:35 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4005,{192, 168, 86, 1},4005, alive=4219,id={51 109 -38 -102 117 108 68 -96 -121 -107 7 -44 -103 -112 -30 120 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={-101 -89 -8 123 -77 -35 79 -52 -71 ...(16)}, ]]
+Okt 05, 2017 3:16:35 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4005,{192, 168, 86, 1},4005, alive=4219,id={51 109 -38 -102 117 108 68 -96 -121 -107 7 -44 -103 -112 -30 120 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={-101 -89 -8 123 -77 -35 79 -52 -71 ...(16)}, ]]
+Okt 05, 2017 3:16:35 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4005,{192, 168, 86, 1},4005, alive=4219,id={51 109 -38 -102 117 108 68 -96 -121 -107 7 -44 -103 -112 -30 120 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={-101 -89 -8 123 -77 -35 79 -52 -71 ...(16)}, ]]
+Okt 05, 2017 3:16:35 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4005,{192, 168, 86, 1},4005, alive=4219,id={51 109 -38 -102 117 108 68 -96 -121 -107 7 -44 -103 -112 -30 120 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={-101 -89 -8 123 -77 -35 79 -52 -71 ...(16)}, ]]
+Okt 05, 2017 3:16:35 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4005,{192, 168, 86, 1},4005, alive=4219,id={51 109 -38 -102 117 108 68 -96 -121 -107 7 -44 -103 -112 -30 120 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={-101 -89 -8 123 -77 -35 79 -52 -71 ...(16)}, ]]
+Okt 05, 2017 3:16:35 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4005,{192, 168, 86, 1},4005, alive=4219,id={51 109 -38 -102 117 108 68 -96 -121 -107 7 -44 -103 -112 -30 120 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={-101 -89 -8 123 -77 -35 79 -52 -71 ...(16)}, ]]
+Okt 05, 2017 3:16:38 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4004,{192, 168, 86, 1},4004, alive=7255,id={-50 -17 95 55 58 109 79 -70 -99 23 87 38 -77 -11 -73 -27 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={-101 -89 -8 123 -77 -35 79 -52 -71 ...(16)}, ]]
+Okt 05, 2017 3:16:38 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Received memberDisappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4005,{192, 168, 86, 1},4005, alive=1507209395068,id={51 109 -38 -102 117 108 68 -96 -121 -107 7 -44 -103 -112 -30 120 }, payload={}, command={}, domain={-101 -89 -8 123 -77 -35 79 -52 -71 ...(16)}, ]] message. Will verify.
+Okt 05, 2017 3:16:38 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4004,{192, 168, 86, 1},4004, alive=7255,id={-50 -17 95 55 58 109 79 -70 -99 23 87 38 -77 -11 -73 -27 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={-101 -89 -8 123 -77 -35 79 -52 -71 ...(16)}, ]]
+Okt 05, 2017 3:16:38 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4006,{192, 168, 86, 1},4006, alive=7193,id={-86 -110 -21 -47 94 -111 79 14 -118 48 -52 101 11 -96 -122 -40 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={-101 -89 -8 123 -77 -35 79 -52 -71 ...(16)}, ]]
+Okt 05, 2017 3:16:38 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4006,{192, 168, 86, 1},4006, alive=7193,id={-86 -110 -21 -47 94 -111 79 14 -118 48 -52 101 11 -96 -122 -40 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={-101 -89 -8 123 -77 -35 79 -52 -71 ...(16)}, ]]
+Okt 05, 2017 3:16:38 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4004,{192, 168, 86, 1},4004, alive=7255,id={-50 -17 95 55 58 109 79 -70 -99 23 87 38 -77 -11 -73 -27 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={-101 -89 -8 123 -77 -35 79 -52 -71 ...(16)}, ]]
+Okt 05, 2017 3:16:38 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Verification complete. Member already disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4005,{192, 168, 86, 1},4005, alive=1507209395068,id={51 109 -38 -102 117 108 68 -96 -121 -107 7 -44 -103 -112 -30 120 }, payload={}, command={}, domain={-101 -89 -8 123 -77 -35 79 -52 -71 ...(16)}, ]]
+Okt 05, 2017 3:16:38 PM org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator sendElectionMsgToNextInline
+WARNUNG: Unable to send election message to:org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4005,{192, 168, 86, 1},4005, alive=1507209395068,id={51 109 -38 -102 117 108 68 -96 -121 -107 7 -44 -103 -112 -30 120 }, payload={}, command={}, domain={-101 -89 -8 123 -77 -35 79 -52 -71 ...(16)}, ]
+Okt 05, 2017 3:16:38 PM org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator sendElectionMsgToNextInline
+WARNUNG: Unable to send election message to:org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4006,{192, 168, 86, 1},4006, alive=1507209395115,id={-86 -110 -21 -47 94 -111 79 14 -118 48 -52 101 11 -96 -122 -40 }, payload={}, command={}, domain={-101 -89 -8 123 -77 -35 79 -52 -71 ...(16)}, ]
+------------- ---------------- ---------------
+
+Testcase: testCoord1 took 3,62 sec
+Testcase: testCoord2 took 7,361 sec

@@ -1,0 +1,64 @@
+Testsuite: org.apache.catalina.tribes.group.TestGroupChannelSenderConnections
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6,856 sec
+------------- Standard Error -----------------
+Okt 05, 2017 3:12:15 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testKeepAliveCount]
+Okt 05, 2017 3:12:15 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4000
+Okt 05, 2017 3:12:15 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4001
+Okt 05, 2017 3:12:15 PM org.apache.catalina.tribes.group.TestGroupChannelSenderConnections testKeepAliveCount
+INFORMATION: Setting keep alive count to 0
+Okt 05, 2017 3:12:15 PM org.apache.catalina.tribes.group.TestGroupChannelSenderConnections sendMessages
+INFORMATION: Sending 3 messages from [tcp://192.168.86.1:4000] to [tcp://192.168.86.1:4001] with delay of 1000 ms between them.
+Okt 05, 2017 3:12:15 PM org.apache.catalina.tribes.io.BufferPool getBufferPool
+INFORMATION: Created a buffer pool with max size:104857600 bytes of type:org.apache.catalina.tribes.io.BufferPool15Impl
+Okt 05, 2017 3:12:15 PM org.apache.catalina.tribes.group.TestGroupChannelSenderConnections$TestMsgListener messageReceived
+INFORMATION: [Listener-2] Received message:org.apache.catalina.tribes.group.TestGroupChannelSenderConnections$TestMsg@5cd44c68 from tcp://{192, 168, 86, 1}:4000
+Okt 05, 2017 3:12:16 PM org.apache.catalina.tribes.group.TestGroupChannelSenderConnections$TestMsgListener messageReceived
+INFORMATION: [Listener-2] Received message:org.apache.catalina.tribes.group.TestGroupChannelSenderConnections$TestMsg@668cce0f from tcp://{192, 168, 86, 1}:4000
+Okt 05, 2017 3:12:17 PM org.apache.catalina.tribes.group.TestGroupChannelSenderConnections sendMessages
+INFORMATION: Messages sent. Waiting no more than 15 seconds for them to be received
+Okt 05, 2017 3:12:17 PM org.apache.catalina.tribes.group.TestGroupChannelSenderConnections$TestMsgListener messageReceived
+INFORMATION: [Listener-2] Received message:org.apache.catalina.tribes.group.TestGroupChannelSenderConnections$TestMsg@62c24582 from tcp://{192, 168, 86, 1}:4000
+Okt 05, 2017 3:12:17 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testKeepAliveTime]
+Okt 05, 2017 3:12:17 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4000
+Okt 05, 2017 3:12:17 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4001
+Okt 05, 2017 3:12:17 PM org.apache.catalina.tribes.group.TestGroupChannelSenderConnections testKeepAliveTime
+INFORMATION: Setting keep alive count to 1 second
+Okt 05, 2017 3:12:17 PM org.apache.catalina.tribes.group.TestGroupChannelSenderConnections sendMessages
+INFORMATION: Sending 3 messages from [tcp://192.168.86.1:4000] to [tcp://192.168.86.1:4001] with delay of 2000 ms between them.
+Okt 05, 2017 3:12:17 PM org.apache.catalina.tribes.group.TestGroupChannelSenderConnections$TestMsgListener messageReceived
+INFORMATION: [Listener-2] Received message:org.apache.catalina.tribes.group.TestGroupChannelSenderConnections$TestMsg@cb54c5e from tcp://{192, 168, 86, 1}:4000
+Okt 05, 2017 3:12:19 PM org.apache.catalina.tribes.group.TestGroupChannelSenderConnections$TestMsgListener messageReceived
+INFORMATION: [Listener-2] Received message:org.apache.catalina.tribes.group.TestGroupChannelSenderConnections$TestMsg@7b9507e9 from tcp://{192, 168, 86, 1}:4000
+Okt 05, 2017 3:12:21 PM org.apache.catalina.tribes.group.TestGroupChannelSenderConnections sendMessages
+INFORMATION: Messages sent. Waiting no more than 15 seconds for them to be received
+Okt 05, 2017 3:12:21 PM org.apache.catalina.tribes.group.TestGroupChannelSenderConnections$TestMsgListener messageReceived
+INFORMATION: [Listener-2] Received message:org.apache.catalina.tribes.group.TestGroupChannelSenderConnections$TestMsg@4541d893 from tcp://{192, 168, 86, 1}:4000
+Okt 05, 2017 3:12:22 PM org.apache.catalina.tribes.transport.nio.NioReplicationTask run
+WARNUNG: IOException in replication worker, unable to drain channel. Probable cause: Keep alive socket closed[null].
+Okt 05, 2017 3:12:22 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testConnectionLinger]
+Okt 05, 2017 3:12:22 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4000
+Okt 05, 2017 3:12:22 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4001
+Okt 05, 2017 3:12:22 PM org.apache.catalina.tribes.group.TestGroupChannelSenderConnections sendMessages
+INFORMATION: Sending 3 messages from [tcp://192.168.86.1:4000] to [tcp://192.168.86.1:4001] with delay of 0 ms between them.
+Okt 05, 2017 3:12:22 PM org.apache.catalina.tribes.group.TestGroupChannelSenderConnections$TestMsgListener messageReceived
+INFORMATION: [Listener-2] Received message:org.apache.catalina.tribes.group.TestGroupChannelSenderConnections$TestMsg@6fe83728 from tcp://{192, 168, 86, 1}:4000
+Okt 05, 2017 3:12:22 PM org.apache.catalina.tribes.group.TestGroupChannelSenderConnections sendMessages
+INFORMATION: Messages sent. Waiting no more than 15 seconds for them to be received
+Okt 05, 2017 3:12:22 PM org.apache.catalina.tribes.group.TestGroupChannelSenderConnections$TestMsgListener messageReceived
+INFORMATION: [Listener-2] Received message:org.apache.catalina.tribes.group.TestGroupChannelSenderConnections$TestMsg@7c52f5c3 from tcp://{192, 168, 86, 1}:4000
+Okt 05, 2017 3:12:22 PM org.apache.catalina.tribes.group.TestGroupChannelSenderConnections$TestMsgListener messageReceived
+INFORMATION: [Listener-2] Received message:org.apache.catalina.tribes.group.TestGroupChannelSenderConnections$TestMsg@72950439 from tcp://{192, 168, 86, 1}:4000
+------------- ---------------- ---------------
+
+Testcase: testKeepAliveCount took 2,497 sec
+Testcase: testKeepAliveTime took 4,185 sec
+Testcase: testConnectionLinger took 0,158 sec

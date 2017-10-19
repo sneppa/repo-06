@@ -1,0 +1,138 @@
+Testsuite: org.apache.catalina.tribes.group.interceptors.TestDomainFilterInterceptor
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2,545 sec
+------------- Standard Output ---------------
+All channels started.
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+Okt 05, 2017 3:16:24 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4000
+Okt 05, 2017 3:16:24 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:16:24 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:16:24 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4001
+Okt 05, 2017 3:16:24 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:16:24 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:16:24 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4002
+Okt 05, 2017 3:16:24 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:16:24 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:16:24 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4003
+Okt 05, 2017 3:16:24 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:16:24 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:16:24 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4004
+Okt 05, 2017 3:16:24 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:16:24 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:16:24 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4005
+Okt 05, 2017 3:16:24 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:16:24 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:16:24 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4006
+Okt 05, 2017 3:16:24 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:16:24 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:16:24 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4007
+Okt 05, 2017 3:16:24 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:16:24 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:16:24 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4008
+Okt 05, 2017 3:16:24 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:16:24 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:16:24 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4009
+Okt 05, 2017 3:16:24 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:16:24 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:16:25 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:16:25 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:16:25 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:16:25 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:16:25 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:16:25 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:16:25 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:16:25 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:16:25 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:16:25 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:16:25 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:16:25 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:16:25 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:16:25 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:16:25 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:16:25 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:16:25 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:16:25 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:16:25 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:16:25 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:16:26 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:16:26 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:16:26 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:16:26 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:16:26 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:16:26 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:16:26 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:16:26 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:16:26 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:16:26 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:16:26 PM org.apache.catalina.tribes.membership.McastServiceImpl$ReceiverThread run
+WARNUNG: Error receiving mcast package. Sleeping 500ms
+java.net.SocketException: socket closed
+	at java.net.TwoStacksPlainDatagramSocketImpl.receive0(Native Method)
+	at java.net.TwoStacksPlainDatagramSocketImpl.receive(TwoStacksPlainDatagramSocketImpl.java:114)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at org.apache.catalina.tribes.membership.McastServiceImpl.receive(McastServiceImpl.java:314)
+	at org.apache.catalina.tribes.membership.McastServiceImpl$ReceiverThread.run(McastServiceImpl.java:414)
+
+------------- ---------------- ---------------
+
+Testcase: testMemberArrival took 2,53 sec

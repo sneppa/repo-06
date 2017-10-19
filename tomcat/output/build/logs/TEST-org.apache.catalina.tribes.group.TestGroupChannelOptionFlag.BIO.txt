@@ -1,0 +1,19 @@
+Testsuite: org.apache.catalina.tribes.group.TestGroupChannelOptionFlag
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2,324 sec
+------------- Standard Error -----------------
+Okt 05, 2017 3:12:13 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4000
+Okt 05, 2017 3:12:13 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:12:13 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:12:14 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:12:14 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:12:15 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+------------- ---------------- ---------------
+
+Testcase: testOptionNoConflict took 2,309 sec
+Testcase: testOptionConflict took 0 sec

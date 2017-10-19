@@ -1,0 +1,725 @@
+Testsuite: org.apache.catalina.core.TestApplicationContext
+Tests run: 41, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 44,181 sec
+------------- Standard Error -----------------
+Okt 05, 2017 3:10:48 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testGetRequestDispatcherEncodedTraversal]
+Okt 05, 2017 3:10:48 PM org.apache.coyote.http11.Http11Protocol init
+INFORMATION: Initializing Coyote HTTP/1.1 on http-127.0.0.1-auto-1-1200
+Okt 05, 2017 3:10:48 PM org.apache.catalina.core.StandardService start
+INFORMATION: Starting service Tomcat
+Okt 05, 2017 3:10:48 PM org.apache.catalina.core.StandardEngine start
+INFORMATION: Starting Servlet Engine: Apache Tomcat/6.0.53
+Okt 05, 2017 3:10:48 PM org.apache.coyote.http11.Http11Protocol start
+INFORMATION: Starting Coyote HTTP/1.1 on http-127.0.0.1-auto-1-1200
+Okt 05, 2017 3:10:49 PM org.apache.catalina.core.ApplicationContext getRequestDispatcher
+WARNUNG: An application attempted to obtain a request dispatcher with an illegal path [/prefix/%2E%2E/target] that was rejected because it contained an encoded directory traversal attempt
+java.lang.IllegalArgumentException
+	at org.apache.catalina.core.ApplicationContext.getRequestDispatcher(ApplicationContext.java:437)
+	at org.apache.catalina.core.ApplicationContextFacade.getRequestDispatcher(ApplicationContextFacade.java:196)
+	at org.apache.catalina.connector.Request.getRequestDispatcher(Request.java:1363)
+	at org.apache.catalina.connector.RequestFacade.getRequestDispatcher(RequestFacade.java:572)
+	at org.apache.catalina.core.TestApplicationContext$DispatcherServlet.doGet(TestApplicationContext.java:404)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:617)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:234)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:610)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:503)
+	at java.lang.Thread.run(Thread.java:745)
+
+Okt 05, 2017 3:10:49 PM org.apache.coyote.http11.Http11Protocol pause
+INFORMATION: Pausing Coyote HTTP/1.1 on http-127.0.0.1-auto-1-1200
+Okt 05, 2017 3:10:50 PM org.apache.catalina.core.StandardService stop
+INFORMATION: Stopping service Tomcat
+Okt 05, 2017 3:10:50 PM org.apache.coyote.http11.Http11Protocol destroy
+INFORMATION: Stopping Coyote HTTP/1.1 on http-127.0.0.1-auto-1-1200
+Okt 05, 2017 3:10:50 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testGetRequestDispatcherNullPath01]
+Okt 05, 2017 3:10:50 PM org.apache.coyote.http11.Http11Protocol init
+INFORMATION: Initializing Coyote HTTP/1.1 on http-127.0.0.1-auto-2-1204
+Okt 05, 2017 3:10:50 PM org.apache.catalina.core.StandardService start
+INFORMATION: Starting service Tomcat
+Okt 05, 2017 3:10:50 PM org.apache.catalina.core.StandardEngine start
+INFORMATION: Starting Servlet Engine: Apache Tomcat/6.0.53
+Okt 05, 2017 3:10:50 PM org.apache.coyote.http11.Http11Protocol start
+INFORMATION: Starting Coyote HTTP/1.1 on http-127.0.0.1-auto-2-1204
+Okt 05, 2017 3:10:50 PM org.apache.coyote.http11.Http11Protocol pause
+INFORMATION: Pausing Coyote HTTP/1.1 on http-127.0.0.1-auto-2-1204
+Okt 05, 2017 3:10:51 PM org.apache.catalina.core.StandardService stop
+INFORMATION: Stopping service Tomcat
+Okt 05, 2017 3:10:51 PM org.apache.coyote.http11.Http11Protocol destroy
+INFORMATION: Stopping Coyote HTTP/1.1 on http-127.0.0.1-auto-2-1204
+Okt 05, 2017 3:10:51 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testGetRequestDispatcherNullPath02]
+Okt 05, 2017 3:10:51 PM org.apache.coyote.http11.Http11Protocol init
+INFORMATION: Initializing Coyote HTTP/1.1 on http-127.0.0.1-auto-3-1208
+Okt 05, 2017 3:10:51 PM org.apache.catalina.core.StandardService start
+INFORMATION: Starting service Tomcat
+Okt 05, 2017 3:10:51 PM org.apache.catalina.core.StandardEngine start
+INFORMATION: Starting Servlet Engine: Apache Tomcat/6.0.53
+Okt 05, 2017 3:10:51 PM org.apache.coyote.http11.Http11Protocol start
+INFORMATION: Starting Coyote HTTP/1.1 on http-127.0.0.1-auto-3-1208
+Okt 05, 2017 3:10:51 PM org.apache.coyote.http11.Http11Protocol pause
+INFORMATION: Pausing Coyote HTTP/1.1 on http-127.0.0.1-auto-3-1208
+Okt 05, 2017 3:10:52 PM org.apache.catalina.core.StandardService stop
+INFORMATION: Stopping service Tomcat
+Okt 05, 2017 3:10:52 PM org.apache.coyote.http11.Http11Protocol destroy
+INFORMATION: Stopping Coyote HTTP/1.1 on http-127.0.0.1-auto-3-1208
+Okt 05, 2017 3:10:52 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testGetRequestDispatcher01]
+Okt 05, 2017 3:10:52 PM org.apache.coyote.http11.Http11Protocol init
+INFORMATION: Initializing Coyote HTTP/1.1 on http-127.0.0.1-auto-4-1212
+Okt 05, 2017 3:10:52 PM org.apache.catalina.core.StandardService start
+INFORMATION: Starting service Tomcat
+Okt 05, 2017 3:10:52 PM org.apache.catalina.core.StandardEngine start
+INFORMATION: Starting Servlet Engine: Apache Tomcat/6.0.53
+Okt 05, 2017 3:10:52 PM org.apache.coyote.http11.Http11Protocol start
+INFORMATION: Starting Coyote HTTP/1.1 on http-127.0.0.1-auto-4-1212
+Okt 05, 2017 3:10:52 PM org.apache.coyote.http11.Http11Protocol pause
+INFORMATION: Pausing Coyote HTTP/1.1 on http-127.0.0.1-auto-4-1212
+Okt 05, 2017 3:10:53 PM org.apache.catalina.core.StandardService stop
+INFORMATION: Stopping service Tomcat
+Okt 05, 2017 3:10:53 PM org.apache.coyote.http11.Http11Protocol destroy
+INFORMATION: Stopping Coyote HTTP/1.1 on http-127.0.0.1-auto-4-1212
+Okt 05, 2017 3:10:53 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testGetRequestDispatcher02]
+Okt 05, 2017 3:10:53 PM org.apache.coyote.http11.Http11Protocol init
+INFORMATION: Initializing Coyote HTTP/1.1 on http-127.0.0.1-auto-5-1216
+Okt 05, 2017 3:10:53 PM org.apache.catalina.core.StandardService start
+INFORMATION: Starting service Tomcat
+Okt 05, 2017 3:10:53 PM org.apache.catalina.core.StandardEngine start
+INFORMATION: Starting Servlet Engine: Apache Tomcat/6.0.53
+Okt 05, 2017 3:10:53 PM org.apache.coyote.http11.Http11Protocol start
+INFORMATION: Starting Coyote HTTP/1.1 on http-127.0.0.1-auto-5-1216
+Okt 05, 2017 3:10:53 PM org.apache.coyote.http11.Http11Protocol pause
+INFORMATION: Pausing Coyote HTTP/1.1 on http-127.0.0.1-auto-5-1216
+Okt 05, 2017 3:10:54 PM org.apache.catalina.core.StandardService stop
+INFORMATION: Stopping service Tomcat
+Okt 05, 2017 3:10:54 PM org.apache.coyote.http11.Http11Protocol destroy
+INFORMATION: Stopping Coyote HTTP/1.1 on http-127.0.0.1-auto-5-1216
+Okt 05, 2017 3:10:54 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testGetRequestDispatcher03]
+Okt 05, 2017 3:10:54 PM org.apache.coyote.http11.Http11Protocol init
+INFORMATION: Initializing Coyote HTTP/1.1 on http-127.0.0.1-auto-6-1220
+Okt 05, 2017 3:10:54 PM org.apache.catalina.core.StandardService start
+INFORMATION: Starting service Tomcat
+Okt 05, 2017 3:10:54 PM org.apache.catalina.core.StandardEngine start
+INFORMATION: Starting Servlet Engine: Apache Tomcat/6.0.53
+Okt 05, 2017 3:10:54 PM org.apache.coyote.http11.Http11Protocol start
+INFORMATION: Starting Coyote HTTP/1.1 on http-127.0.0.1-auto-6-1220
+Okt 05, 2017 3:10:54 PM org.apache.coyote.http11.Http11Protocol pause
+INFORMATION: Pausing Coyote HTTP/1.1 on http-127.0.0.1-auto-6-1220
+Okt 05, 2017 3:10:55 PM org.apache.catalina.core.StandardService stop
+INFORMATION: Stopping service Tomcat
+Okt 05, 2017 3:10:55 PM org.apache.coyote.http11.Http11Protocol destroy
+INFORMATION: Stopping Coyote HTTP/1.1 on http-127.0.0.1-auto-6-1220
+Okt 05, 2017 3:10:55 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testGetRequestDispatcher04]
+Okt 05, 2017 3:10:55 PM org.apache.coyote.http11.Http11Protocol init
+INFORMATION: Initializing Coyote HTTP/1.1 on http-127.0.0.1-auto-7-1224
+Okt 05, 2017 3:10:55 PM org.apache.catalina.core.StandardService start
+INFORMATION: Starting service Tomcat
+Okt 05, 2017 3:10:55 PM org.apache.catalina.core.StandardEngine start
+INFORMATION: Starting Servlet Engine: Apache Tomcat/6.0.53
+Okt 05, 2017 3:10:55 PM org.apache.coyote.http11.Http11Protocol start
+INFORMATION: Starting Coyote HTTP/1.1 on http-127.0.0.1-auto-7-1224
+Okt 05, 2017 3:10:55 PM org.apache.coyote.http11.Http11Protocol pause
+INFORMATION: Pausing Coyote HTTP/1.1 on http-127.0.0.1-auto-7-1224
+Okt 05, 2017 3:10:56 PM org.apache.catalina.core.StandardService stop
+INFORMATION: Stopping service Tomcat
+Okt 05, 2017 3:10:56 PM org.apache.coyote.http11.Http11Protocol destroy
+INFORMATION: Stopping Coyote HTTP/1.1 on http-127.0.0.1-auto-7-1224
+Okt 05, 2017 3:10:56 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testGetRequestDispatcher05]
+Okt 05, 2017 3:10:56 PM org.apache.coyote.http11.Http11Protocol init
+INFORMATION: Initializing Coyote HTTP/1.1 on http-127.0.0.1-auto-8-1228
+Okt 05, 2017 3:10:56 PM org.apache.catalina.core.StandardService start
+INFORMATION: Starting service Tomcat
+Okt 05, 2017 3:10:56 PM org.apache.catalina.core.StandardEngine start
+INFORMATION: Starting Servlet Engine: Apache Tomcat/6.0.53
+Okt 05, 2017 3:10:56 PM org.apache.coyote.http11.Http11Protocol start
+INFORMATION: Starting Coyote HTTP/1.1 on http-127.0.0.1-auto-8-1228
+Okt 05, 2017 3:10:56 PM org.apache.coyote.http11.Http11Protocol pause
+INFORMATION: Pausing Coyote HTTP/1.1 on http-127.0.0.1-auto-8-1228
+Okt 05, 2017 3:10:57 PM org.apache.catalina.core.StandardService stop
+INFORMATION: Stopping service Tomcat
+Okt 05, 2017 3:10:57 PM org.apache.coyote.http11.Http11Protocol destroy
+INFORMATION: Stopping Coyote HTTP/1.1 on http-127.0.0.1-auto-8-1228
+Okt 05, 2017 3:10:57 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testGetRequestDispatcher06]
+Okt 05, 2017 3:10:57 PM org.apache.coyote.http11.Http11Protocol init
+INFORMATION: Initializing Coyote HTTP/1.1 on http-127.0.0.1-auto-9-1232
+Okt 05, 2017 3:10:57 PM org.apache.catalina.core.StandardService start
+INFORMATION: Starting service Tomcat
+Okt 05, 2017 3:10:57 PM org.apache.catalina.core.StandardEngine start
+INFORMATION: Starting Servlet Engine: Apache Tomcat/6.0.53
+Okt 05, 2017 3:10:57 PM org.apache.coyote.http11.Http11Protocol start
+INFORMATION: Starting Coyote HTTP/1.1 on http-127.0.0.1-auto-9-1232
+Okt 05, 2017 3:10:57 PM org.apache.coyote.http11.Http11Protocol pause
+INFORMATION: Pausing Coyote HTTP/1.1 on http-127.0.0.1-auto-9-1232
+Okt 05, 2017 3:10:58 PM org.apache.catalina.core.StandardService stop
+INFORMATION: Stopping service Tomcat
+Okt 05, 2017 3:10:58 PM org.apache.coyote.http11.Http11Protocol destroy
+INFORMATION: Stopping Coyote HTTP/1.1 on http-127.0.0.1-auto-9-1232
+Okt 05, 2017 3:10:58 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testGetRequestDispatcher11]
+Okt 05, 2017 3:10:58 PM org.apache.coyote.http11.Http11Protocol init
+INFORMATION: Initializing Coyote HTTP/1.1 on http-127.0.0.1-auto-10-1236
+Okt 05, 2017 3:10:58 PM org.apache.catalina.core.StandardService start
+INFORMATION: Starting service Tomcat
+Okt 05, 2017 3:10:58 PM org.apache.catalina.core.StandardEngine start
+INFORMATION: Starting Servlet Engine: Apache Tomcat/6.0.53
+Okt 05, 2017 3:10:58 PM org.apache.coyote.http11.Http11Protocol start
+INFORMATION: Starting Coyote HTTP/1.1 on http-127.0.0.1-auto-10-1236
+Okt 05, 2017 3:10:58 PM org.apache.coyote.http11.Http11Protocol pause
+INFORMATION: Pausing Coyote HTTP/1.1 on http-127.0.0.1-auto-10-1236
+Okt 05, 2017 3:10:59 PM org.apache.catalina.core.StandardService stop
+INFORMATION: Stopping service Tomcat
+Okt 05, 2017 3:10:59 PM org.apache.coyote.http11.Http11Protocol destroy
+INFORMATION: Stopping Coyote HTTP/1.1 on http-127.0.0.1-auto-10-1236
+Okt 05, 2017 3:10:59 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testGetRequestDispatcher12]
+Okt 05, 2017 3:10:59 PM org.apache.coyote.http11.Http11Protocol init
+INFORMATION: Initializing Coyote HTTP/1.1 on http-127.0.0.1-auto-11-1240
+Okt 05, 2017 3:10:59 PM org.apache.catalina.core.StandardService start
+INFORMATION: Starting service Tomcat
+Okt 05, 2017 3:10:59 PM org.apache.catalina.core.StandardEngine start
+INFORMATION: Starting Servlet Engine: Apache Tomcat/6.0.53
+Okt 05, 2017 3:10:59 PM org.apache.coyote.http11.Http11Protocol start
+INFORMATION: Starting Coyote HTTP/1.1 on http-127.0.0.1-auto-11-1240
+Okt 05, 2017 3:10:59 PM org.apache.coyote.http11.Http11Protocol pause
+INFORMATION: Pausing Coyote HTTP/1.1 on http-127.0.0.1-auto-11-1240
+Okt 05, 2017 3:11:00 PM org.apache.catalina.core.StandardService stop
+INFORMATION: Stopping service Tomcat
+Okt 05, 2017 3:11:00 PM org.apache.coyote.http11.Http11Protocol destroy
+INFORMATION: Stopping Coyote HTTP/1.1 on http-127.0.0.1-auto-11-1240
+Okt 05, 2017 3:11:00 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testGetRequestDispatcher13]
+Okt 05, 2017 3:11:00 PM org.apache.coyote.http11.Http11Protocol init
+INFORMATION: Initializing Coyote HTTP/1.1 on http-127.0.0.1-auto-12-1244
+Okt 05, 2017 3:11:00 PM org.apache.catalina.core.StandardService start
+INFORMATION: Starting service Tomcat
+Okt 05, 2017 3:11:00 PM org.apache.catalina.core.StandardEngine start
+INFORMATION: Starting Servlet Engine: Apache Tomcat/6.0.53
+Okt 05, 2017 3:11:00 PM org.apache.coyote.http11.Http11Protocol start
+INFORMATION: Starting Coyote HTTP/1.1 on http-127.0.0.1-auto-12-1244
+Okt 05, 2017 3:11:00 PM org.apache.coyote.http11.Http11Protocol pause
+INFORMATION: Pausing Coyote HTTP/1.1 on http-127.0.0.1-auto-12-1244
+Okt 05, 2017 3:11:01 PM org.apache.catalina.core.StandardService stop
+INFORMATION: Stopping service Tomcat
+Okt 05, 2017 3:11:01 PM org.apache.coyote.http11.Http11Protocol destroy
+INFORMATION: Stopping Coyote HTTP/1.1 on http-127.0.0.1-auto-12-1244
+Okt 05, 2017 3:11:01 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testGetRequestDispatcher14]
+Okt 05, 2017 3:11:01 PM org.apache.coyote.http11.Http11Protocol init
+INFORMATION: Initializing Coyote HTTP/1.1 on http-127.0.0.1-auto-13-1248
+Okt 05, 2017 3:11:01 PM org.apache.catalina.core.StandardService start
+INFORMATION: Starting service Tomcat
+Okt 05, 2017 3:11:01 PM org.apache.catalina.core.StandardEngine start
+INFORMATION: Starting Servlet Engine: Apache Tomcat/6.0.53
+Okt 05, 2017 3:11:01 PM org.apache.coyote.http11.Http11Protocol start
+INFORMATION: Starting Coyote HTTP/1.1 on http-127.0.0.1-auto-13-1248
+Okt 05, 2017 3:11:01 PM org.apache.coyote.http11.Http11Protocol pause
+INFORMATION: Pausing Coyote HTTP/1.1 on http-127.0.0.1-auto-13-1248
+Okt 05, 2017 3:11:02 PM org.apache.catalina.core.StandardService stop
+INFORMATION: Stopping service Tomcat
+Okt 05, 2017 3:11:02 PM org.apache.coyote.http11.Http11Protocol destroy
+INFORMATION: Stopping Coyote HTTP/1.1 on http-127.0.0.1-auto-13-1248
+Okt 05, 2017 3:11:02 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testGetRequestDispatcher15]
+Okt 05, 2017 3:11:02 PM org.apache.coyote.http11.Http11Protocol init
+INFORMATION: Initializing Coyote HTTP/1.1 on http-127.0.0.1-auto-14-1252
+Okt 05, 2017 3:11:02 PM org.apache.catalina.core.StandardService start
+INFORMATION: Starting service Tomcat
+Okt 05, 2017 3:11:02 PM org.apache.catalina.core.StandardEngine start
+INFORMATION: Starting Servlet Engine: Apache Tomcat/6.0.53
+Okt 05, 2017 3:11:03 PM org.apache.coyote.http11.Http11Protocol start
+INFORMATION: Starting Coyote HTTP/1.1 on http-127.0.0.1-auto-14-1252
+Okt 05, 2017 3:11:03 PM org.apache.coyote.http11.Http11Protocol pause
+INFORMATION: Pausing Coyote HTTP/1.1 on http-127.0.0.1-auto-14-1252
+Okt 05, 2017 3:11:04 PM org.apache.catalina.core.StandardService stop
+INFORMATION: Stopping service Tomcat
+Okt 05, 2017 3:11:04 PM org.apache.coyote.http11.Http11Protocol destroy
+INFORMATION: Stopping Coyote HTTP/1.1 on http-127.0.0.1-auto-14-1252
+Okt 05, 2017 3:11:04 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testGetRequestDispatcher16]
+Okt 05, 2017 3:11:04 PM org.apache.coyote.http11.Http11Protocol init
+INFORMATION: Initializing Coyote HTTP/1.1 on http-127.0.0.1-auto-15-1256
+Okt 05, 2017 3:11:04 PM org.apache.catalina.core.StandardService start
+INFORMATION: Starting service Tomcat
+Okt 05, 2017 3:11:04 PM org.apache.catalina.core.StandardEngine start
+INFORMATION: Starting Servlet Engine: Apache Tomcat/6.0.53
+Okt 05, 2017 3:11:04 PM org.apache.coyote.http11.Http11Protocol start
+INFORMATION: Starting Coyote HTTP/1.1 on http-127.0.0.1-auto-15-1256
+Okt 05, 2017 3:11:04 PM org.apache.coyote.http11.Http11Protocol pause
+INFORMATION: Pausing Coyote HTTP/1.1 on http-127.0.0.1-auto-15-1256
+Okt 05, 2017 3:11:05 PM org.apache.catalina.core.StandardService stop
+INFORMATION: Stopping service Tomcat
+Okt 05, 2017 3:11:05 PM org.apache.coyote.http11.Http11Protocol destroy
+INFORMATION: Stopping Coyote HTTP/1.1 on http-127.0.0.1-auto-15-1256
+Okt 05, 2017 3:11:05 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testGetRequestDispatcher21]
+Okt 05, 2017 3:11:05 PM org.apache.coyote.http11.Http11Protocol init
+INFORMATION: Initializing Coyote HTTP/1.1 on http-127.0.0.1-auto-16-1260
+Okt 05, 2017 3:11:05 PM org.apache.catalina.core.StandardService start
+INFORMATION: Starting service Tomcat
+Okt 05, 2017 3:11:05 PM org.apache.catalina.core.StandardEngine start
+INFORMATION: Starting Servlet Engine: Apache Tomcat/6.0.53
+Okt 05, 2017 3:11:05 PM org.apache.coyote.http11.Http11Protocol start
+INFORMATION: Starting Coyote HTTP/1.1 on http-127.0.0.1-auto-16-1260
+Okt 05, 2017 3:11:05 PM org.apache.coyote.http11.Http11Protocol pause
+INFORMATION: Pausing Coyote HTTP/1.1 on http-127.0.0.1-auto-16-1260
+Okt 05, 2017 3:11:06 PM org.apache.catalina.core.StandardService stop
+INFORMATION: Stopping service Tomcat
+Okt 05, 2017 3:11:06 PM org.apache.coyote.http11.Http11Protocol destroy
+INFORMATION: Stopping Coyote HTTP/1.1 on http-127.0.0.1-auto-16-1260
+Okt 05, 2017 3:11:06 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testGetRequestDispatcher22]
+Okt 05, 2017 3:11:06 PM org.apache.coyote.http11.Http11Protocol init
+INFORMATION: Initializing Coyote HTTP/1.1 on http-127.0.0.1-auto-17-1264
+Okt 05, 2017 3:11:06 PM org.apache.catalina.core.StandardService start
+INFORMATION: Starting service Tomcat
+Okt 05, 2017 3:11:06 PM org.apache.catalina.core.StandardEngine start
+INFORMATION: Starting Servlet Engine: Apache Tomcat/6.0.53
+Okt 05, 2017 3:11:06 PM org.apache.coyote.http11.Http11Protocol start
+INFORMATION: Starting Coyote HTTP/1.1 on http-127.0.0.1-auto-17-1264
+Okt 05, 2017 3:11:06 PM org.apache.coyote.http11.Http11Protocol pause
+INFORMATION: Pausing Coyote HTTP/1.1 on http-127.0.0.1-auto-17-1264
+Okt 05, 2017 3:11:07 PM org.apache.catalina.core.StandardService stop
+INFORMATION: Stopping service Tomcat
+Okt 05, 2017 3:11:07 PM org.apache.coyote.http11.Http11Protocol destroy
+INFORMATION: Stopping Coyote HTTP/1.1 on http-127.0.0.1-auto-17-1264
+Okt 05, 2017 3:11:07 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testGetRequestDispatcher23]
+Okt 05, 2017 3:11:07 PM org.apache.coyote.http11.Http11Protocol init
+INFORMATION: Initializing Coyote HTTP/1.1 on http-127.0.0.1-auto-18-1268
+Okt 05, 2017 3:11:07 PM org.apache.catalina.core.StandardService start
+INFORMATION: Starting service Tomcat
+Okt 05, 2017 3:11:07 PM org.apache.catalina.core.StandardEngine start
+INFORMATION: Starting Servlet Engine: Apache Tomcat/6.0.53
+Okt 05, 2017 3:11:07 PM org.apache.coyote.http11.Http11Protocol start
+INFORMATION: Starting Coyote HTTP/1.1 on http-127.0.0.1-auto-18-1268
+Okt 05, 2017 3:11:07 PM org.apache.coyote.http11.Http11Protocol pause
+INFORMATION: Pausing Coyote HTTP/1.1 on http-127.0.0.1-auto-18-1268
+Okt 05, 2017 3:11:08 PM org.apache.catalina.core.StandardService stop
+INFORMATION: Stopping service Tomcat
+Okt 05, 2017 3:11:08 PM org.apache.coyote.http11.Http11Protocol destroy
+INFORMATION: Stopping Coyote HTTP/1.1 on http-127.0.0.1-auto-18-1268
+Okt 05, 2017 3:11:08 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testGetRequestDispatcher24]
+Okt 05, 2017 3:11:08 PM org.apache.coyote.http11.Http11Protocol init
+INFORMATION: Initializing Coyote HTTP/1.1 on http-127.0.0.1-auto-19-1272
+Okt 05, 2017 3:11:08 PM org.apache.catalina.core.StandardService start
+INFORMATION: Starting service Tomcat
+Okt 05, 2017 3:11:08 PM org.apache.catalina.core.StandardEngine start
+INFORMATION: Starting Servlet Engine: Apache Tomcat/6.0.53
+Okt 05, 2017 3:11:08 PM org.apache.coyote.http11.Http11Protocol start
+INFORMATION: Starting Coyote HTTP/1.1 on http-127.0.0.1-auto-19-1272
+Okt 05, 2017 3:11:08 PM org.apache.coyote.http11.Http11Protocol pause
+INFORMATION: Pausing Coyote HTTP/1.1 on http-127.0.0.1-auto-19-1272
+Okt 05, 2017 3:11:09 PM org.apache.catalina.core.StandardService stop
+INFORMATION: Stopping service Tomcat
+Okt 05, 2017 3:11:09 PM org.apache.coyote.http11.Http11Protocol destroy
+INFORMATION: Stopping Coyote HTTP/1.1 on http-127.0.0.1-auto-19-1272
+Okt 05, 2017 3:11:09 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testGetRequestDispatcher25]
+Okt 05, 2017 3:11:09 PM org.apache.coyote.http11.Http11Protocol init
+INFORMATION: Initializing Coyote HTTP/1.1 on http-127.0.0.1-auto-20-1276
+Okt 05, 2017 3:11:09 PM org.apache.catalina.core.StandardService start
+INFORMATION: Starting service Tomcat
+Okt 05, 2017 3:11:09 PM org.apache.catalina.core.StandardEngine start
+INFORMATION: Starting Servlet Engine: Apache Tomcat/6.0.53
+Okt 05, 2017 3:11:09 PM org.apache.coyote.http11.Http11Protocol start
+INFORMATION: Starting Coyote HTTP/1.1 on http-127.0.0.1-auto-20-1276
+Okt 05, 2017 3:11:09 PM org.apache.coyote.http11.Http11Protocol pause
+INFORMATION: Pausing Coyote HTTP/1.1 on http-127.0.0.1-auto-20-1276
+Okt 05, 2017 3:11:10 PM org.apache.catalina.core.StandardService stop
+INFORMATION: Stopping service Tomcat
+Okt 05, 2017 3:11:10 PM org.apache.coyote.http11.Http11Protocol destroy
+INFORMATION: Stopping Coyote HTTP/1.1 on http-127.0.0.1-auto-20-1276
+Okt 05, 2017 3:11:10 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testGetRequestDispatcher26]
+Okt 05, 2017 3:11:10 PM org.apache.coyote.http11.Http11Protocol init
+INFORMATION: Initializing Coyote HTTP/1.1 on http-127.0.0.1-auto-21-1280
+Okt 05, 2017 3:11:10 PM org.apache.catalina.core.StandardService start
+INFORMATION: Starting service Tomcat
+Okt 05, 2017 3:11:10 PM org.apache.catalina.core.StandardEngine start
+INFORMATION: Starting Servlet Engine: Apache Tomcat/6.0.53
+Okt 05, 2017 3:11:10 PM org.apache.coyote.http11.Http11Protocol start
+INFORMATION: Starting Coyote HTTP/1.1 on http-127.0.0.1-auto-21-1280
+Okt 05, 2017 3:11:10 PM org.apache.coyote.http11.Http11Protocol pause
+INFORMATION: Pausing Coyote HTTP/1.1 on http-127.0.0.1-auto-21-1280
+Okt 05, 2017 3:11:11 PM org.apache.catalina.core.StandardService stop
+INFORMATION: Stopping service Tomcat
+Okt 05, 2017 3:11:11 PM org.apache.coyote.http11.Http11Protocol destroy
+INFORMATION: Stopping Coyote HTTP/1.1 on http-127.0.0.1-auto-21-1280
+Okt 05, 2017 3:11:11 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testGetRequestDispatcher31]
+Okt 05, 2017 3:11:11 PM org.apache.coyote.http11.Http11Protocol init
+INFORMATION: Initializing Coyote HTTP/1.1 on http-127.0.0.1-auto-22-1284
+Okt 05, 2017 3:11:11 PM org.apache.catalina.core.StandardService start
+INFORMATION: Starting service Tomcat
+Okt 05, 2017 3:11:11 PM org.apache.catalina.core.StandardEngine start
+INFORMATION: Starting Servlet Engine: Apache Tomcat/6.0.53
+Okt 05, 2017 3:11:11 PM org.apache.coyote.http11.Http11Protocol start
+INFORMATION: Starting Coyote HTTP/1.1 on http-127.0.0.1-auto-22-1284
+Okt 05, 2017 3:11:11 PM org.apache.coyote.http11.Http11Protocol pause
+INFORMATION: Pausing Coyote HTTP/1.1 on http-127.0.0.1-auto-22-1284
+Okt 05, 2017 3:11:12 PM org.apache.catalina.core.StandardService stop
+INFORMATION: Stopping service Tomcat
+Okt 05, 2017 3:11:12 PM org.apache.coyote.http11.Http11Protocol destroy
+INFORMATION: Stopping Coyote HTTP/1.1 on http-127.0.0.1-auto-22-1284
+Okt 05, 2017 3:11:12 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testGetRequestDispatcher32]
+Okt 05, 2017 3:11:12 PM org.apache.coyote.http11.Http11Protocol init
+INFORMATION: Initializing Coyote HTTP/1.1 on http-127.0.0.1-auto-23-1288
+Okt 05, 2017 3:11:12 PM org.apache.catalina.core.StandardService start
+INFORMATION: Starting service Tomcat
+Okt 05, 2017 3:11:12 PM org.apache.catalina.core.StandardEngine start
+INFORMATION: Starting Servlet Engine: Apache Tomcat/6.0.53
+Okt 05, 2017 3:11:12 PM org.apache.coyote.http11.Http11Protocol start
+INFORMATION: Starting Coyote HTTP/1.1 on http-127.0.0.1-auto-23-1288
+Okt 05, 2017 3:11:12 PM org.apache.coyote.http11.Http11Protocol pause
+INFORMATION: Pausing Coyote HTTP/1.1 on http-127.0.0.1-auto-23-1288
+Okt 05, 2017 3:11:13 PM org.apache.catalina.core.StandardService stop
+INFORMATION: Stopping service Tomcat
+Okt 05, 2017 3:11:13 PM org.apache.coyote.http11.Http11Protocol destroy
+INFORMATION: Stopping Coyote HTTP/1.1 on http-127.0.0.1-auto-23-1288
+Okt 05, 2017 3:11:13 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testGetRequestDispatcher33]
+Okt 05, 2017 3:11:13 PM org.apache.coyote.http11.Http11Protocol init
+INFORMATION: Initializing Coyote HTTP/1.1 on http-127.0.0.1-auto-24-1292
+Okt 05, 2017 3:11:13 PM org.apache.catalina.core.StandardService start
+INFORMATION: Starting service Tomcat
+Okt 05, 2017 3:11:13 PM org.apache.catalina.core.StandardEngine start
+INFORMATION: Starting Servlet Engine: Apache Tomcat/6.0.53
+Okt 05, 2017 3:11:13 PM org.apache.coyote.http11.Http11Protocol start
+INFORMATION: Starting Coyote HTTP/1.1 on http-127.0.0.1-auto-24-1292
+Okt 05, 2017 3:11:13 PM org.apache.coyote.http11.Http11Protocol pause
+INFORMATION: Pausing Coyote HTTP/1.1 on http-127.0.0.1-auto-24-1292
+Okt 05, 2017 3:11:14 PM org.apache.catalina.core.StandardService stop
+INFORMATION: Stopping service Tomcat
+Okt 05, 2017 3:11:14 PM org.apache.coyote.http11.Http11Protocol destroy
+INFORMATION: Stopping Coyote HTTP/1.1 on http-127.0.0.1-auto-24-1292
+Okt 05, 2017 3:11:14 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testGetRequestDispatcher34]
+Okt 05, 2017 3:11:14 PM org.apache.coyote.http11.Http11Protocol init
+INFORMATION: Initializing Coyote HTTP/1.1 on http-127.0.0.1-auto-25-1296
+Okt 05, 2017 3:11:14 PM org.apache.catalina.core.StandardService start
+INFORMATION: Starting service Tomcat
+Okt 05, 2017 3:11:14 PM org.apache.catalina.core.StandardEngine start
+INFORMATION: Starting Servlet Engine: Apache Tomcat/6.0.53
+Okt 05, 2017 3:11:14 PM org.apache.coyote.http11.Http11Protocol start
+INFORMATION: Starting Coyote HTTP/1.1 on http-127.0.0.1-auto-25-1296
+Okt 05, 2017 3:11:14 PM org.apache.coyote.http11.Http11Protocol pause
+INFORMATION: Pausing Coyote HTTP/1.1 on http-127.0.0.1-auto-25-1296
+Okt 05, 2017 3:11:15 PM org.apache.catalina.core.StandardService stop
+INFORMATION: Stopping service Tomcat
+Okt 05, 2017 3:11:15 PM org.apache.coyote.http11.Http11Protocol destroy
+INFORMATION: Stopping Coyote HTTP/1.1 on http-127.0.0.1-auto-25-1296
+Okt 05, 2017 3:11:15 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testGetRequestDispatcher35]
+Okt 05, 2017 3:11:15 PM org.apache.coyote.http11.Http11Protocol init
+INFORMATION: Initializing Coyote HTTP/1.1 on http-127.0.0.1-auto-26-1300
+Okt 05, 2017 3:11:15 PM org.apache.catalina.core.StandardService start
+INFORMATION: Starting service Tomcat
+Okt 05, 2017 3:11:15 PM org.apache.catalina.core.StandardEngine start
+INFORMATION: Starting Servlet Engine: Apache Tomcat/6.0.53
+Okt 05, 2017 3:11:15 PM org.apache.coyote.http11.Http11Protocol start
+INFORMATION: Starting Coyote HTTP/1.1 on http-127.0.0.1-auto-26-1300
+Okt 05, 2017 3:11:15 PM org.apache.coyote.http11.Http11Protocol pause
+INFORMATION: Pausing Coyote HTTP/1.1 on http-127.0.0.1-auto-26-1300
+Okt 05, 2017 3:11:16 PM org.apache.catalina.core.StandardService stop
+INFORMATION: Stopping service Tomcat
+Okt 05, 2017 3:11:16 PM org.apache.coyote.http11.Http11Protocol destroy
+INFORMATION: Stopping Coyote HTTP/1.1 on http-127.0.0.1-auto-26-1300
+Okt 05, 2017 3:11:16 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testGetRequestDispatcher36]
+Okt 05, 2017 3:11:16 PM org.apache.coyote.http11.Http11Protocol init
+INFORMATION: Initializing Coyote HTTP/1.1 on http-127.0.0.1-auto-27-1304
+Okt 05, 2017 3:11:16 PM org.apache.catalina.core.StandardService start
+INFORMATION: Starting service Tomcat
+Okt 05, 2017 3:11:16 PM org.apache.catalina.core.StandardEngine start
+INFORMATION: Starting Servlet Engine: Apache Tomcat/6.0.53
+Okt 05, 2017 3:11:16 PM org.apache.coyote.http11.Http11Protocol start
+INFORMATION: Starting Coyote HTTP/1.1 on http-127.0.0.1-auto-27-1304
+Okt 05, 2017 3:11:16 PM org.apache.coyote.http11.Http11Protocol pause
+INFORMATION: Pausing Coyote HTTP/1.1 on http-127.0.0.1-auto-27-1304
+Okt 05, 2017 3:11:17 PM org.apache.catalina.core.StandardService stop
+INFORMATION: Stopping service Tomcat
+Okt 05, 2017 3:11:17 PM org.apache.coyote.http11.Http11Protocol destroy
+INFORMATION: Stopping Coyote HTTP/1.1 on http-127.0.0.1-auto-27-1304
+Okt 05, 2017 3:11:17 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testGetRequestDispatcher41]
+Okt 05, 2017 3:11:17 PM org.apache.coyote.http11.Http11Protocol init
+INFORMATION: Initializing Coyote HTTP/1.1 on http-127.0.0.1-auto-28-1308
+Okt 05, 2017 3:11:17 PM org.apache.catalina.core.StandardService start
+INFORMATION: Starting service Tomcat
+Okt 05, 2017 3:11:17 PM org.apache.catalina.core.StandardEngine start
+INFORMATION: Starting Servlet Engine: Apache Tomcat/6.0.53
+Okt 05, 2017 3:11:17 PM org.apache.coyote.http11.Http11Protocol start
+INFORMATION: Starting Coyote HTTP/1.1 on http-127.0.0.1-auto-28-1308
+Okt 05, 2017 3:11:17 PM org.apache.coyote.http11.Http11Protocol pause
+INFORMATION: Pausing Coyote HTTP/1.1 on http-127.0.0.1-auto-28-1308
+Okt 05, 2017 3:11:18 PM org.apache.catalina.core.StandardService stop
+INFORMATION: Stopping service Tomcat
+Okt 05, 2017 3:11:18 PM org.apache.coyote.http11.Http11Protocol destroy
+INFORMATION: Stopping Coyote HTTP/1.1 on http-127.0.0.1-auto-28-1308
+Okt 05, 2017 3:11:18 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testGetRequestDispatcher42]
+Okt 05, 2017 3:11:18 PM org.apache.coyote.http11.Http11Protocol init
+INFORMATION: Initializing Coyote HTTP/1.1 on http-127.0.0.1-auto-29-1312
+Okt 05, 2017 3:11:18 PM org.apache.catalina.core.StandardService start
+INFORMATION: Starting service Tomcat
+Okt 05, 2017 3:11:18 PM org.apache.catalina.core.StandardEngine start
+INFORMATION: Starting Servlet Engine: Apache Tomcat/6.0.53
+Okt 05, 2017 3:11:18 PM org.apache.coyote.http11.Http11Protocol start
+INFORMATION: Starting Coyote HTTP/1.1 on http-127.0.0.1-auto-29-1312
+Okt 05, 2017 3:11:18 PM org.apache.coyote.http11.Http11Protocol pause
+INFORMATION: Pausing Coyote HTTP/1.1 on http-127.0.0.1-auto-29-1312
+Okt 05, 2017 3:11:19 PM org.apache.catalina.core.StandardService stop
+INFORMATION: Stopping service Tomcat
+Okt 05, 2017 3:11:19 PM org.apache.coyote.http11.Http11Protocol destroy
+INFORMATION: Stopping Coyote HTTP/1.1 on http-127.0.0.1-auto-29-1312
+Okt 05, 2017 3:11:19 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testGetRequestDispatcher43]
+Okt 05, 2017 3:11:19 PM org.apache.coyote.http11.Http11Protocol init
+INFORMATION: Initializing Coyote HTTP/1.1 on http-127.0.0.1-auto-30-1316
+Okt 05, 2017 3:11:19 PM org.apache.catalina.core.StandardService start
+INFORMATION: Starting service Tomcat
+Okt 05, 2017 3:11:19 PM org.apache.catalina.core.StandardEngine start
+INFORMATION: Starting Servlet Engine: Apache Tomcat/6.0.53
+Okt 05, 2017 3:11:19 PM org.apache.coyote.http11.Http11Protocol start
+INFORMATION: Starting Coyote HTTP/1.1 on http-127.0.0.1-auto-30-1316
+Okt 05, 2017 3:11:19 PM org.apache.coyote.http11.Http11Protocol pause
+INFORMATION: Pausing Coyote HTTP/1.1 on http-127.0.0.1-auto-30-1316
+Okt 05, 2017 3:11:20 PM org.apache.catalina.core.StandardService stop
+INFORMATION: Stopping service Tomcat
+Okt 05, 2017 3:11:20 PM org.apache.coyote.http11.Http11Protocol destroy
+INFORMATION: Stopping Coyote HTTP/1.1 on http-127.0.0.1-auto-30-1316
+Okt 05, 2017 3:11:20 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testGetRequestDispatcher44]
+Okt 05, 2017 3:11:20 PM org.apache.coyote.http11.Http11Protocol init
+INFORMATION: Initializing Coyote HTTP/1.1 on http-127.0.0.1-auto-31-1320
+Okt 05, 2017 3:11:20 PM org.apache.catalina.core.StandardService start
+INFORMATION: Starting service Tomcat
+Okt 05, 2017 3:11:20 PM org.apache.catalina.core.StandardEngine start
+INFORMATION: Starting Servlet Engine: Apache Tomcat/6.0.53
+Okt 05, 2017 3:11:20 PM org.apache.coyote.http11.Http11Protocol start
+INFORMATION: Starting Coyote HTTP/1.1 on http-127.0.0.1-auto-31-1320
+Okt 05, 2017 3:11:20 PM org.apache.coyote.http11.Http11Protocol pause
+INFORMATION: Pausing Coyote HTTP/1.1 on http-127.0.0.1-auto-31-1320
+Okt 05, 2017 3:11:21 PM org.apache.catalina.core.StandardService stop
+INFORMATION: Stopping service Tomcat
+Okt 05, 2017 3:11:21 PM org.apache.coyote.http11.Http11Protocol destroy
+INFORMATION: Stopping Coyote HTTP/1.1 on http-127.0.0.1-auto-31-1320
+Okt 05, 2017 3:11:21 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testGetRequestDispatcher45]
+Okt 05, 2017 3:11:21 PM org.apache.coyote.http11.Http11Protocol init
+INFORMATION: Initializing Coyote HTTP/1.1 on http-127.0.0.1-auto-32-1324
+Okt 05, 2017 3:11:21 PM org.apache.catalina.core.StandardService start
+INFORMATION: Starting service Tomcat
+Okt 05, 2017 3:11:21 PM org.apache.catalina.core.StandardEngine start
+INFORMATION: Starting Servlet Engine: Apache Tomcat/6.0.53
+Okt 05, 2017 3:11:21 PM org.apache.coyote.http11.Http11Protocol start
+INFORMATION: Starting Coyote HTTP/1.1 on http-127.0.0.1-auto-32-1324
+Okt 05, 2017 3:11:21 PM org.apache.coyote.http11.Http11Protocol pause
+INFORMATION: Pausing Coyote HTTP/1.1 on http-127.0.0.1-auto-32-1324
+Okt 05, 2017 3:11:22 PM org.apache.catalina.core.StandardService stop
+INFORMATION: Stopping service Tomcat
+Okt 05, 2017 3:11:22 PM org.apache.coyote.http11.Http11Protocol destroy
+INFORMATION: Stopping Coyote HTTP/1.1 on http-127.0.0.1-auto-32-1324
+Okt 05, 2017 3:11:22 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testGetRequestDispatcher46]
+Okt 05, 2017 3:11:22 PM org.apache.coyote.http11.Http11Protocol init
+INFORMATION: Initializing Coyote HTTP/1.1 on http-127.0.0.1-auto-33-1328
+Okt 05, 2017 3:11:22 PM org.apache.catalina.core.StandardService start
+INFORMATION: Starting service Tomcat
+Okt 05, 2017 3:11:22 PM org.apache.catalina.core.StandardEngine start
+INFORMATION: Starting Servlet Engine: Apache Tomcat/6.0.53
+Okt 05, 2017 3:11:23 PM org.apache.coyote.http11.Http11Protocol start
+INFORMATION: Starting Coyote HTTP/1.1 on http-127.0.0.1-auto-33-1328
+Okt 05, 2017 3:11:23 PM org.apache.coyote.http11.Http11Protocol pause
+INFORMATION: Pausing Coyote HTTP/1.1 on http-127.0.0.1-auto-33-1328
+Okt 05, 2017 3:11:24 PM org.apache.catalina.core.StandardService stop
+INFORMATION: Stopping service Tomcat
+Okt 05, 2017 3:11:24 PM org.apache.coyote.http11.Http11Protocol destroy
+INFORMATION: Stopping Coyote HTTP/1.1 on http-127.0.0.1-auto-33-1328
+Okt 05, 2017 3:11:24 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testGetRequestDispatcherOutsideContextRoot01]
+Okt 05, 2017 3:11:24 PM org.apache.coyote.http11.Http11Protocol init
+INFORMATION: Initializing Coyote HTTP/1.1 on http-127.0.0.1-auto-34-1332
+Okt 05, 2017 3:11:24 PM org.apache.catalina.core.StandardService start
+INFORMATION: Starting service Tomcat
+Okt 05, 2017 3:11:24 PM org.apache.catalina.core.StandardEngine start
+INFORMATION: Starting Servlet Engine: Apache Tomcat/6.0.53
+Okt 05, 2017 3:11:24 PM org.apache.coyote.http11.Http11Protocol start
+INFORMATION: Starting Coyote HTTP/1.1 on http-127.0.0.1-auto-34-1332
+Okt 05, 2017 3:11:24 PM org.apache.coyote.http11.Http11Protocol pause
+INFORMATION: Pausing Coyote HTTP/1.1 on http-127.0.0.1-auto-34-1332
+Okt 05, 2017 3:11:25 PM org.apache.catalina.core.StandardService stop
+INFORMATION: Stopping service Tomcat
+Okt 05, 2017 3:11:25 PM org.apache.coyote.http11.Http11Protocol destroy
+INFORMATION: Stopping Coyote HTTP/1.1 on http-127.0.0.1-auto-34-1332
+Okt 05, 2017 3:11:25 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testGetRequestDispatcherOutsideContextRoot02]
+Okt 05, 2017 3:11:25 PM org.apache.coyote.http11.Http11Protocol init
+INFORMATION: Initializing Coyote HTTP/1.1 on http-127.0.0.1-auto-35-1336
+Okt 05, 2017 3:11:25 PM org.apache.catalina.core.StandardService start
+INFORMATION: Starting service Tomcat
+Okt 05, 2017 3:11:25 PM org.apache.catalina.core.StandardEngine start
+INFORMATION: Starting Servlet Engine: Apache Tomcat/6.0.53
+Okt 05, 2017 3:11:25 PM org.apache.coyote.http11.Http11Protocol start
+INFORMATION: Starting Coyote HTTP/1.1 on http-127.0.0.1-auto-35-1336
+Okt 05, 2017 3:11:25 PM org.apache.coyote.http11.Http11Protocol pause
+INFORMATION: Pausing Coyote HTTP/1.1 on http-127.0.0.1-auto-35-1336
+Okt 05, 2017 3:11:26 PM org.apache.catalina.core.StandardService stop
+INFORMATION: Stopping service Tomcat
+Okt 05, 2017 3:11:26 PM org.apache.coyote.http11.Http11Protocol destroy
+INFORMATION: Stopping Coyote HTTP/1.1 on http-127.0.0.1-auto-35-1336
+Okt 05, 2017 3:11:26 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testGetRequestDispatcherTraversal01]
+Okt 05, 2017 3:11:26 PM org.apache.coyote.http11.Http11Protocol init
+INFORMATION: Initializing Coyote HTTP/1.1 on http-127.0.0.1-auto-36-1340
+Okt 05, 2017 3:11:26 PM org.apache.catalina.core.StandardService start
+INFORMATION: Starting service Tomcat
+Okt 05, 2017 3:11:26 PM org.apache.catalina.core.StandardEngine start
+INFORMATION: Starting Servlet Engine: Apache Tomcat/6.0.53
+Okt 05, 2017 3:11:26 PM org.apache.coyote.http11.Http11Protocol start
+INFORMATION: Starting Coyote HTTP/1.1 on http-127.0.0.1-auto-36-1340
+Okt 05, 2017 3:11:26 PM org.apache.coyote.http11.Http11Protocol pause
+INFORMATION: Pausing Coyote HTTP/1.1 on http-127.0.0.1-auto-36-1340
+Okt 05, 2017 3:11:27 PM org.apache.catalina.core.StandardService stop
+INFORMATION: Stopping service Tomcat
+Okt 05, 2017 3:11:27 PM org.apache.coyote.http11.Http11Protocol destroy
+INFORMATION: Stopping Coyote HTTP/1.1 on http-127.0.0.1-auto-36-1340
+Okt 05, 2017 3:11:27 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testGetRequestDispatcherTraversal02]
+Okt 05, 2017 3:11:27 PM org.apache.coyote.http11.Http11Protocol init
+INFORMATION: Initializing Coyote HTTP/1.1 on http-127.0.0.1-auto-37-1344
+Okt 05, 2017 3:11:27 PM org.apache.catalina.core.StandardService start
+INFORMATION: Starting service Tomcat
+Okt 05, 2017 3:11:27 PM org.apache.catalina.core.StandardEngine start
+INFORMATION: Starting Servlet Engine: Apache Tomcat/6.0.53
+Okt 05, 2017 3:11:27 PM org.apache.coyote.http11.Http11Protocol start
+INFORMATION: Starting Coyote HTTP/1.1 on http-127.0.0.1-auto-37-1344
+Okt 05, 2017 3:11:27 PM org.apache.coyote.http11.Http11Protocol pause
+INFORMATION: Pausing Coyote HTTP/1.1 on http-127.0.0.1-auto-37-1344
+Okt 05, 2017 3:11:28 PM org.apache.catalina.core.StandardService stop
+INFORMATION: Stopping service Tomcat
+Okt 05, 2017 3:11:28 PM org.apache.coyote.http11.Http11Protocol destroy
+INFORMATION: Stopping Coyote HTTP/1.1 on http-127.0.0.1-auto-37-1344
+Okt 05, 2017 3:11:28 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testGetRequestDispatcherTraversal03]
+Okt 05, 2017 3:11:28 PM org.apache.coyote.http11.Http11Protocol init
+INFORMATION: Initializing Coyote HTTP/1.1 on http-127.0.0.1-auto-38-1348
+Okt 05, 2017 3:11:28 PM org.apache.catalina.core.StandardService start
+INFORMATION: Starting service Tomcat
+Okt 05, 2017 3:11:28 PM org.apache.catalina.core.StandardEngine start
+INFORMATION: Starting Servlet Engine: Apache Tomcat/6.0.53
+Okt 05, 2017 3:11:28 PM org.apache.coyote.http11.Http11Protocol start
+INFORMATION: Starting Coyote HTTP/1.1 on http-127.0.0.1-auto-38-1348
+Okt 05, 2017 3:11:28 PM org.apache.coyote.http11.Http11Protocol pause
+INFORMATION: Pausing Coyote HTTP/1.1 on http-127.0.0.1-auto-38-1348
+Okt 05, 2017 3:11:29 PM org.apache.catalina.core.StandardService stop
+INFORMATION: Stopping service Tomcat
+Okt 05, 2017 3:11:29 PM org.apache.coyote.http11.Http11Protocol destroy
+INFORMATION: Stopping Coyote HTTP/1.1 on http-127.0.0.1-auto-38-1348
+Okt 05, 2017 3:11:29 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testGetRequestDispatcherTraversal04]
+Okt 05, 2017 3:11:29 PM org.apache.coyote.http11.Http11Protocol init
+INFORMATION: Initializing Coyote HTTP/1.1 on http-127.0.0.1-auto-39-1352
+Okt 05, 2017 3:11:29 PM org.apache.catalina.core.StandardService start
+INFORMATION: Starting service Tomcat
+Okt 05, 2017 3:11:29 PM org.apache.catalina.core.StandardEngine start
+INFORMATION: Starting Servlet Engine: Apache Tomcat/6.0.53
+Okt 05, 2017 3:11:29 PM org.apache.coyote.http11.Http11Protocol start
+INFORMATION: Starting Coyote HTTP/1.1 on http-127.0.0.1-auto-39-1352
+Okt 05, 2017 3:11:29 PM org.apache.coyote.http11.Http11Protocol pause
+INFORMATION: Pausing Coyote HTTP/1.1 on http-127.0.0.1-auto-39-1352
+Okt 05, 2017 3:11:30 PM org.apache.catalina.core.StandardService stop
+INFORMATION: Stopping service Tomcat
+Okt 05, 2017 3:11:30 PM org.apache.coyote.http11.Http11Protocol destroy
+INFORMATION: Stopping Coyote HTTP/1.1 on http-127.0.0.1-auto-39-1352
+Okt 05, 2017 3:11:30 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testGetRequestDispatcherTraversal05]
+Okt 05, 2017 3:11:30 PM org.apache.coyote.http11.Http11Protocol init
+INFORMATION: Initializing Coyote HTTP/1.1 on http-127.0.0.1-auto-40-1356
+Okt 05, 2017 3:11:30 PM org.apache.catalina.core.StandardService start
+INFORMATION: Starting service Tomcat
+Okt 05, 2017 3:11:30 PM org.apache.catalina.core.StandardEngine start
+INFORMATION: Starting Servlet Engine: Apache Tomcat/6.0.53
+Okt 05, 2017 3:11:30 PM org.apache.coyote.http11.Http11Protocol start
+INFORMATION: Starting Coyote HTTP/1.1 on http-127.0.0.1-auto-40-1356
+Okt 05, 2017 3:11:30 PM org.apache.coyote.http11.Http11Protocol pause
+INFORMATION: Pausing Coyote HTTP/1.1 on http-127.0.0.1-auto-40-1356
+Okt 05, 2017 3:11:31 PM org.apache.catalina.core.StandardService stop
+INFORMATION: Stopping service Tomcat
+Okt 05, 2017 3:11:31 PM org.apache.coyote.http11.Http11Protocol destroy
+INFORMATION: Stopping Coyote HTTP/1.1 on http-127.0.0.1-auto-40-1356
+Okt 05, 2017 3:11:31 PM org.apache.catalina.startup.LoggingBaseTest setUp
+INFORMATION: Starting test case [testGetRequestDispatcherTraversal06]
+Okt 05, 2017 3:11:31 PM org.apache.coyote.http11.Http11Protocol init
+INFORMATION: Initializing Coyote HTTP/1.1 on http-127.0.0.1-auto-41-1360
+Okt 05, 2017 3:11:31 PM org.apache.catalina.core.StandardService start
+INFORMATION: Starting service Tomcat
+Okt 05, 2017 3:11:31 PM org.apache.catalina.core.StandardEngine start
+INFORMATION: Starting Servlet Engine: Apache Tomcat/6.0.53
+Okt 05, 2017 3:11:31 PM org.apache.coyote.http11.Http11Protocol start
+INFORMATION: Starting Coyote HTTP/1.1 on http-127.0.0.1-auto-41-1360
+Okt 05, 2017 3:11:31 PM org.apache.coyote.http11.Http11Protocol pause
+INFORMATION: Pausing Coyote HTTP/1.1 on http-127.0.0.1-auto-41-1360
+Okt 05, 2017 3:11:32 PM org.apache.catalina.core.StandardService stop
+INFORMATION: Stopping service Tomcat
+Okt 05, 2017 3:11:32 PM org.apache.coyote.http11.Http11Protocol destroy
+INFORMATION: Stopping Coyote HTTP/1.1 on http-127.0.0.1-auto-41-1360
+------------- ---------------- ---------------
+
+Testcase: testGetRequestDispatcherEncodedTraversal took 1,934 sec
+Testcase: testGetRequestDispatcherNullPath01 took 1,155 sec
+Testcase: testGetRequestDispatcherNullPath02 took 1,092 sec
+Testcase: testGetRequestDispatcher01 took 1,092 sec
+Testcase: testGetRequestDispatcher02 took 1,06 sec
+Testcase: testGetRequestDispatcher03 took 1,061 sec
+Testcase: testGetRequestDispatcher04 took 1,077 sec
+Testcase: testGetRequestDispatcher05 took 1,045 sec
+Testcase: testGetRequestDispatcher06 took 1,045 sec
+Testcase: testGetRequestDispatcher11 took 1,032 sec
+Testcase: testGetRequestDispatcher12 took 1,045 sec
+Testcase: testGetRequestDispatcher13 took 1,036 sec
+Testcase: testGetRequestDispatcher14 took 1,046 sec
+Testcase: testGetRequestDispatcher15 took 1,06 sec
+Testcase: testGetRequestDispatcher16 took 1,061 sec
+Testcase: testGetRequestDispatcher21 took 1,061 sec
+Testcase: testGetRequestDispatcher22 took 1,061 sec
+Testcase: testGetRequestDispatcher23 took 1,045 sec
+Testcase: testGetRequestDispatcher24 took 1,045 sec
+Testcase: testGetRequestDispatcher25 took 1,061 sec
+Testcase: testGetRequestDispatcher26 took 1,045 sec
+Testcase: testGetRequestDispatcher31 took 1,045 sec
+Testcase: testGetRequestDispatcher32 took 1,077 sec
+Testcase: testGetRequestDispatcher33 took 1,061 sec
+Testcase: testGetRequestDispatcher34 took 1,06 sec
+Testcase: testGetRequestDispatcher35 took 1,051 sec
+Testcase: testGetRequestDispatcher36 took 1,045 sec
+Testcase: testGetRequestDispatcher41 took 1,045 sec
+Testcase: testGetRequestDispatcher42 took 1,046 sec
+Testcase: testGetRequestDispatcher43 took 1,06 sec
+Testcase: testGetRequestDispatcher44 took 1,046 sec
+Testcase: testGetRequestDispatcher45 took 1,045 sec
+Testcase: testGetRequestDispatcher46 took 1,045 sec
+Testcase: testGetRequestDispatcherOutsideContextRoot01 took 1,045 sec
+Testcase: testGetRequestDispatcherOutsideContextRoot02 took 1,077 sec
+Testcase: testGetRequestDispatcherTraversal01 took 1,045 sec
+Testcase: testGetRequestDispatcherTraversal02 took 1,045 sec
+Testcase: testGetRequestDispatcherTraversal03 took 1,045 sec
+Testcase: testGetRequestDispatcherTraversal04 took 1,045 sec
+Testcase: testGetRequestDispatcherTraversal05 took 1,033 sec
+Testcase: testGetRequestDispatcherTraversal06 took 1,045 sec

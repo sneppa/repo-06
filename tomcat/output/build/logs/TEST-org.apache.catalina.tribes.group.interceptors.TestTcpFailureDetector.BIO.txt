@@ -1,0 +1,124 @@
+Testsuite: org.apache.catalina.tribes.group.interceptors.TestTcpFailureDetector
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21,713 sec
+------------- Standard Output ---------------
+testTcpMcastFail()
+Channel-2:member added[Channel-1]
+Channel-1:member added[Channel-2]
+Channel-2:member disappeared[Channel-1]
+testTcpFailureMemberAdd()
+Channel-2:member added[Channel-1]
+testTcpSendFailureMemberDrop()
+Channel-2:member added[Channel-1]
+Channel-1:member added[Channel-2]
+Channel-1:member disappeared[Channel-2]
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+Okt 05, 2017 3:12:55 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4000
+Okt 05, 2017 3:12:55 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:12:55 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:12:57 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:12:57 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:12:58 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:12:58 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4001
+Okt 05, 2017 3:12:58 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:12:58 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:12:58 PM org.apache.catalina.tribes.io.BufferPool getBufferPool
+INFORMATION: Created a buffer pool with max size:104857600 bytes of type:org.apache.catalina.tribes.io.BufferPool15Impl
+Okt 05, 2017 3:12:59 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:12:59 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:13:00 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:13:02 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Received memberDisappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4001,{192, 168, 86, 1},4001, alive=1529,id={-114 -98 42 -96 19 -27 67 6 -109 -67 -24 -68 -35 10 92 39 }, payload={67 104 97 110 110 101 108 45 50 ...(9)}, command={}, domain={40 -69 -51 -116 -11 103 78 12 -109 ...(16)}, ]] message. Will verify.
+Okt 05, 2017 3:13:02 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Verification complete. Member still alive[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4001,{192, 168, 86, 1},4001, alive=1529,id={-114 -98 42 -96 19 -27 67 6 -109 -67 -24 -68 -35 10 92 39 }, payload={67 104 97 110 110 101 108 45 50 ...(9)}, command={}, domain={40 -69 -51 -116 -11 103 78 12 -109 ...(16)}, ]]
+Okt 05, 2017 3:13:05 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4000,{192, 168, 86, 1},4000, alive=9101,id={-109 55 86 -98 -63 68 69 -39 -106 46 110 51 -62 36 25 1 }, payload={67 104 97 110 110 101 108 45 49 ...(9)}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={40 -69 -51 -116 -11 103 78 12 -109 ...(16)}, ]]
+Okt 05, 2017 3:13:05 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4000
+Okt 05, 2017 3:13:05 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:13:05 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:13:06 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:13:06 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:13:07 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:13:07 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4001
+Okt 05, 2017 3:13:07 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:13:07 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:13:08 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:13:08 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:13:09 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:13:09 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4000
+Okt 05, 2017 3:13:09 PM org.apache.catalina.tribes.membership.McastServiceImpl$ReceiverThread run
+WARNUNG: Error receiving mcast package. Sleeping 500ms
+java.net.SocketException: socket closed
+	at java.net.TwoStacksPlainDatagramSocketImpl.receive0(Native Method)
+	at java.net.TwoStacksPlainDatagramSocketImpl.receive(TwoStacksPlainDatagramSocketImpl.java:114)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at org.apache.catalina.tribes.membership.McastServiceImpl.receive(McastServiceImpl.java:314)
+	at org.apache.catalina.tribes.membership.McastServiceImpl$ReceiverThread.run(McastServiceImpl.java:414)
+
+Okt 05, 2017 3:13:09 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:13:09 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:13:10 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:13:10 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:13:11 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:13:11 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFORMATION: Receiver Server Socket bound to:/192.168.86.1:4001
+Okt 05, 2017 3:13:11 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFORMATION: Setting cluster mcast soTimeout to 500
+Okt 05, 2017 3:13:11 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Okt 05, 2017 3:13:12 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:4
+Okt 05, 2017 3:13:12 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Okt 05, 2017 3:13:13 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFORMATION: Done sleeping, membership established, start level:8
+Okt 05, 2017 3:13:14 PM org.apache.catalina.tribes.transport.nio.ParallelNioSender doLoop
+WARNUNG: Member send is failing for:tcp://{192, 168, 86, 1}:4001 ; Setting to suspect and retrying.
+Okt 05, 2017 3:13:16 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Received memberDisappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4001,{192, 168, 86, 1},4001, alive=4619,id={-87 51 -93 41 91 -55 66 40 -81 117 -100 26 -85 103 67 -101 }, payload={67 104 97 110 110 101 108 45 50 ...(9)}, command={}, domain={74 111 -96 78 49 -6 70 -25 -110 ...(16)}, ]] message. Will verify.
+Okt 05, 2017 3:13:17 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFORMATION: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{192, 168, 86, 1}:4001,{192, 168, 86, 1},4001, alive=5637,id={-87 51 -93 41 91 -55 66 40 -81 117 -100 26 -85 103 67 -101 }, payload={67 104 97 110 110 101 108 45 50 ...(9)}, command={}, domain={74 111 -96 78 49 -6 70 -25 -110 ...(16)}, ]]
+Okt 05, 2017 3:13:17 PM org.apache.catalina.tribes.membership.McastServiceImpl$ReceiverThread run
+WARNUNG: Error receiving mcast package. Sleeping 500ms
+java.net.SocketException: socket closed
+	at java.net.TwoStacksPlainDatagramSocketImpl.receive0(Native Method)
+	at java.net.TwoStacksPlainDatagramSocketImpl.receive(TwoStacksPlainDatagramSocketImpl.java:114)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at org.apache.catalina.tribes.membership.McastServiceImpl.receive(McastServiceImpl.java:314)
+	at org.apache.catalina.tribes.membership.McastServiceImpl$ReceiverThread.run(McastServiceImpl.java:414)
+
+------------- ---------------- ---------------
+
+Testcase: testTcpMcastFail took 9,382 sec
+Testcase: testTcpFailureMemberAdd took 4,136 sec
+Testcase: testTcpSendFailureMemberDrop took 8,18 sec
