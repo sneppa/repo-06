@@ -35,15 +35,15 @@ dot -Tpdf catalina.dot > catalina.pdf
 Hierbei wurden die Pakete catalina_core, catalina_valves und catalina_connector deutlich in den Mittelpunkt gestellt und sehr häufig verbunden.
 In den Paketen catalina_core und catalina_connector konnten wir die Klassen ApplicationRequest.java (catalina_core) und Request.java (catalina_connector) finden, die auf das Handling des Requests hinweisen.
 
-![Catalina core picture](catalina_core.png)
+![Catalina core picture](catalina_core.PNG)
 
 Als erstes haben wir für die Klasse ApplicationRequest.java einen Breakpoint gesetzt und den Server mit dem Debugging-Tool gestartet. Die Klasse ApplicationRequest.java wird bei einem Get-Request nicht angesprochen, weshalb wir dann einen Breakpoint für die Klasse Request.java (catalina_connector) gesetzt haben.
 Hierbei ist uns aufgefallen, dass zwischen dem Erstellen der Objekte Request und Response, in der Klasse Connector.java, der Methodenaufruf request.setConnector(this) ausgeführt wird. Deshalb haben wir in der Klasse in der Implementierung der setConnector-Methode eine Exception werfen lassen, um den [Stacktrace](outputs/stacktrace_setConnector.txt) auszugeben. Jedoch war dieser Stacktrace nicht sehr aussagekräftig für die Architektur.
 
-![Stacktrace connector](connector_graph.png)
+![Stacktrace connector](connector_graph.PNG)
 
 Um einen detailierteren Stacktrace zu erhalten, haben wir einen try-catch-Block, zum werfen einer [Exception](outputs/exception.txt) in die Serveltklasse index.jsp (wird als Startseite aufgerufen) eingefügt. So wurde uns ein ausführlicherer [Stacktrace](outputs/StackTrace.txt) ausgegeben.
 
-![Request stacktrace](Stacktrace_graph.png)
+![Request stacktrace](stacktrace_graph.png)
 
 ## Probleme
