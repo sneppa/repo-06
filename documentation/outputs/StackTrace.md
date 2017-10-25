@@ -10,8 +10,9 @@ In die index.jsp der ROOT WebApp die folgenden Zeilen für eine Exception einfü
 };
 %
 ```
+Explizit die JSP aufrufen: http://localhost:8080/index.jsp
 
-Die Ausgabe lautet dann wiefolgt: 
+Die Ausgabe lautet dann wie folgt: 
 
 ```
 Daemon Thread [http-8080-1] (Suspended (exception NullPointerException))	
