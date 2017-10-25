@@ -42,8 +42,12 @@ Hierbei ist uns aufgefallen, dass zwischen dem Erstellen der Objekte Request und
 
 ![Stacktrace connector](connector_graph.PNG)
 
-Um einen detailierteren Stacktrace zu erhalten, haben wir einen try-catch-Block, zum werfen einer [Exception](outputs/exception.txt) in die Serveltklasse index.jsp (wird als Startseite aufgerufen) eingefügt. So wurde uns ein ausführlicherer [Stacktrace](outputs/StackTrace.txt) ausgegeben.
+Um einen detailierteren Stacktrace zu erhalten, haben wir einen try-catch-Block, zum werfen einer [Exception](outputs/exception.txt) in die Servletklasse index.jsp (wird als Startseite aufgerufen) eingefügt. So wurde uns ein ausführlicherer [Stacktrace](outputs/StackTrace.md) ausgegeben.
 
 ![Request stacktrace](stacktrace_graph.png)
 
+
 ## Probleme
+* Arbeiten mit einem Windows-Betriebssystem. Besser gleich Linux benutzen.
+* Obwohl man mit GraphViz eine sehr gute Übersicht über die Zusammenhänge erhält, muss der Einstieg ein wenig erraten werden.
+* Aussagekräftiger StackTrace erst erhalten durch Einfügen eines Try-Catch-Blocks in der Servletklasse index.jsp.
