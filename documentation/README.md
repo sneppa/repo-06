@@ -42,5 +42,4 @@ Hierbei ist uns aufgefallen, dass zwischen dem Erstellen der Objekte Request und
 
 Um einen detailierteren Stacktrace zu erhalten, haben wir einen try-catch-Block, zum werfen einer [Exception](outputs/exception.txt) in die Serveltklasse index.jsp (wird als Startseite aufgerufen) eingefügt. So wurde uns ein ausführlicherer [Stacktrace](outputs/StackTrace.txt) ausgegeben.
 
-
 ## Probleme
