@@ -1,0 +1,9 @@
+
+<%
+    try {
+        throw new Exception();
+    } catch (Exception e) {
+    	out.println("Exception stacktrace:");
+        e.printStackTrace();
+    }
+%>
