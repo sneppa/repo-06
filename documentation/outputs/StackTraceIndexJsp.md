@@ -1,3 +1,4 @@
+```
 Daemon Thread [http-8080-1] (Suspended (exception NullPointerException))	
 	JspServletWrapper.handleJspException(Exception) line: 491	
 	JspServletWrapper.service(HttpServletRequest, HttpServletResponse, boolean) line: 349	
@@ -16,3 +17,4 @@ Daemon Thread [http-8080-1] (Suspended (exception NullPointerException))
 	Http11Protocol$Http11ConnectionHandler.process(Socket) line: 610	
 	JIoEndpoint$Worker.run() line: 503	
 	Thread.run() line: 748	
+  ```
