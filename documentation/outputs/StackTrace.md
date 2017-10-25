@@ -8,7 +8,7 @@ In die index.jsp der ROOT WebApp die folgenden Zeilen für eine Exception einfü
         e.printStackTrace();
     }
 };
-%
+%>
 ```
 Explizit die JSP aufrufen: http://localhost:8080/index.jsp
 
