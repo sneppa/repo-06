@@ -1,3 +1,18 @@
+In die index.jsp der ROOT WebApp die folgenden Zeilen für eine Exception einfügen:
+
+```
+<%
+    try {
+        throw new Exception();
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+};
+%
+```
+
+Die Ausgabe lautet dann wiefolgt: 
+
 ```
 Daemon Thread [http-8080-1] (Suspended (exception NullPointerException))	
 	JspServletWrapper.handleJspException(Exception) line: 491	
