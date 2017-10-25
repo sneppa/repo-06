@@ -31,7 +31,7 @@ Erstellen der .pdf Datei für den Graphen
 dot -Tpdf catalina.dot > catalina.pdf
 ```
 
-[Graph als PDF]/output/catalina.pdf
+[Graph als PDF]output/catalina.pdf
 
 Hierbei wurden die Pakete catalina_core, catalina_valves und catalina_connector deutlich in den Mittelpunkt gestellt und sehr häufig verbunden.
 Auf das Request-handling deuten die Klassen ApplicationRequest.java (catalina_core) und Request.java (catalina_connector) hin. Auf Grund der Namensgebung wurde zuerst die Klasse Request.java untersucht.
