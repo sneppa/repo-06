@@ -13,7 +13,7 @@ grep = Mit grep lassen sich Dateien nach bestimmten Textstücken durchsuchen. Di
 
 sed = sed (von stream editor) ist ein nicht-interaktiver Texteditor für die Verwendung auf der Kommandozeile oder in Skripten
 
-Erstellen der .dot Datei
+Erstellen der .dot Datei in /git/repo-06/Tomcat/java/org/apache
 ```
 echo "digraph {" > test.dot ; grep -R "^import" * | sed -E "s/\//./g" | \
 sed -E "s/\.java//g" | sed -E "s/\.\*//g" | sed -E "s/import //g" | \
@@ -31,6 +31,7 @@ Erstellen der .pdf Datei für den Graphen
 dot -Tpdf catalina.dot > catalina.pdf
 ```
 
+/output/catalina.pdf
 
 Hierbei wurden die Pakete catalina_core, catalina_valves und catalina_connector deutlich in den Mittelpunkt gestellt und sehr häufig verbunden.
 Auf das Request-handling deuten die Klassen ApplicationRequest.java (catalina_core) und Request.java (catalina_connector) hin. Auf Grund der Namensgebung wurde zuerst die Klasse Request.java untersucht.
