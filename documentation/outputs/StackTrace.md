@@ -1,36 +1,26 @@
-In die index.jsp der ROOT WebApp die folgenden Zeilen für eine Exception einfügen:
-
 ```
-<%
-    try {
-        throw new Exception();
-    } catch (Exception e) {
-        e.printStackTrace();
-    }
-};
-%>
-```
-Explizit die JSP aufrufen: http://localhost:8080/index.jsp
-
-Die Ausgabe lautet dann wie folgt: 
-
-```
-Daemon Thread [http-8080-1] (Suspended (exception NullPointerException))	
-	JspServletWrapper.handleJspException(Exception) line: 491	
-	JspServletWrapper.service(HttpServletRequest, HttpServletResponse, boolean) line: 349	
-	JspServlet.serviceJspFile(HttpServletRequest, HttpServletResponse, String, Throwable, boolean) line: 321	
-	JspServlet.service(HttpServletRequest, HttpServletResponse) line: 267	
-	JspServlet(HttpServlet).service(ServletRequest, ServletResponse) line: 723	
-	ApplicationFilterChain.internalDoFilter(ServletRequest, ServletResponse) line: 290	
-	ApplicationFilterChain.doFilter(ServletRequest, ServletResponse) line: 206	
-	StandardWrapperValve.invoke(Request, Response) line: 234	
-	StandardContextValve.invoke(Request, Response) line: 191	
-	StandardHostValve.invoke(Rquest, Response) line: 127	
-	ErrorReportValve.invoke(Request, Response) line: 103	
-	StandardEngineValve.invoke(Request, Response) line: 109	
-	CoyoteAdapter.service(Request, Response) line: 293	
-	Http11Processor.process(Socket) line: 859	
-	Http11Protocol$Http11ConnectionHandler.process(Socket) line: 610	
-	JIoEndpoint$Worker.run() line: 503	
-	Thread.run() line: 748	
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:460)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:334)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:321)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:328)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:321)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:267)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:610)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:503)
+	at java.lang.Thread.run(Unknown Source)
   ```
