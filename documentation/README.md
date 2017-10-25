@@ -38,3 +38,6 @@ Auf das Request-handling deuten die Klassen ApplicationRequest.java (catalina_co
 Durch das Debugging-Tool haben wir folgenden Ablauf feststellen können:
 Die Klasse ApplicationRequest.java (catalina_core) wird von bei einem Get-Request nicht angesprochen, weshalb wir dann einen Breakpoint in der Klasse Request.java (catalina_connector) gesetzt haben.
 Hierbei ist uns aufgefallen das nachdem erstellen eines Request Objektes die Funktion
+
+## Probleme
+
