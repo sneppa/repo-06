@@ -51,3 +51,4 @@ Um einen detailierteren Stacktrace zu erhalten, haben wir einen try-catch-Block,
 * Arbeiten mit einem Windows-Betriebssystem. Besser gleich Linux benutzen.
 * Obwohl man mit GraphViz eine sehr gute Übersicht über die Zusammenhänge erhält, muss der Einstieg ein wenig erraten werden.
 * Aussagekräftiger StackTrace erst erhalten durch Einfügen eines Try-Catch-Blocks in der Servletklasse index.jsp.
+* Aufruf der Index.jsp nur über direkten Aufruf von http://localhost:8080/index.jsp möglich, sonst wird nur index.html aufgerufen, selbst wenn diese gelöscht ist.
