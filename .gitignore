@@ -6,6 +6,6 @@
 
 Tomcat/.classpath
 Tomcat/.project
-Tomcat/.settings
-Tomcat/output
-Tomcat/target
+Tomcat/.settings/**
+Tomcat/output/**
+Tomcat/target/**
