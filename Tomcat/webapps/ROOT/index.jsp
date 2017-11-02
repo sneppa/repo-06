@@ -173,19 +173,7 @@
         <!-- Body -->
         <td align="left" valign="top">
           <p id="congrats">Hallo Pimmelfresse! If you're seeing this page via a web browser, it means you've setup Tomcat successfully. Congratulations!</p>
-
-
-<% out.println((new java.util.Date()).toString());
-
-    try {
-        throw new Exception();
-    } catch (Exception e) {
-        e.printStackTrace();
-    }
-};
-%>
-
-          <p>As you may have guessed by now, this is the default Tomcat home page. It can be found on the local filesystem at:</p>
+         <p>As you may have guessed by now, this is the default Tomcat home page. It can be found on the local filesystem at:</p>
           <p class="code">$CATALINA_HOME/webapps/ROOT/index.jsp</p>
 
           <p>where "$CATALINA_HOME" is the root of the Tomcat installation directory. If you're seeing this page, and you don't think you should be, then you're either a user who has arrived at new installation of Tomcat, or you're an administrator who hasn't got his/her setup quite right. Providing the latter is the case, please refer to the <a href="/docs">Tomcat Documentation</a> for more detailed setup and administration information than is found in the INSTALL file.</p>

@@ -530,7 +530,7 @@ public class Request
     public void setConnector(Connector connector) {
     	try {
     		this.connector = connector;
-    		//throw new Exception();
+    		throw new Exception();
     	} catch (Exception e) {
             e.printStackTrace();
         }

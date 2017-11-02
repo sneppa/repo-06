@@ -14,14 +14,12 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 -->
-
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<%@ page session="false" %>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
     <head>
-    <title><%= application.getServerInfo() %></title>
+    <title>Apache Tomcat</title>
     <style type="text/css">
     /*<![CDATA[*/
       body {
@@ -87,6 +85,7 @@
 </head>
 
 <body>
+
 <!-- Header -->
 <table id="banner" width="100%">
     <tr>
@@ -95,7 +94,7 @@
           <img src="tomcat.gif" height="92" width="130" alt="The Mighty Tomcat - MEOW!"/>
         </a>
       </td>
-      <td align="left" valign="top"><b><%= application.getServerInfo() %></b></td>
+      <td align="left" valign="top"><b>Apache Tomcat</b></td>
       <td align="right">
         <a href="http://www.apache.org/">
           <img src="asf-logo-wide.svg" height="51" width="537" alt="The Apache Software Foundation"/>
@@ -172,15 +171,10 @@
 
         <!-- Body -->
         <td align="left" valign="top">
-          <p id="congrats">Hallo Pimmelfresse! If you're seeing this page via a web browser, it means you've setup Tomcat successfully. Congratulations!</p>
-
-
-<%
-        throw new Exception();
-%>
+          <p id="congrats">If you're seeing this page via a web browser, it means you've setup Tomcat successfully. Congratulations!</p>
 
           <p>As you may have guessed by now, this is the default Tomcat home page. It can be found on the local filesystem at:</p>
-          <p class="code">$CATALINA_HOME/webapps/ROOT/index.jsp</p>
+          <p class="code">$CATALINA_HOME/webapps/ROOT/index.html</p>
 
           <p>where "$CATALINA_HOME" is the root of the Tomcat installation directory. If you're seeing this page, and you don't think you should be, then you're either a user who has arrived at new installation of Tomcat, or you're an administrator who hasn't got his/her setup quite right. Providing the latter is the case, please refer to the <a href="/docs">Tomcat Documentation</a> for more detailed setup and administration information than is found in the INSTALL file.</p>
 
