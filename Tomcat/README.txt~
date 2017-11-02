@@ -1,3 +1,0 @@
-README
-
-Zum Erstellen des JAR Files mit mvn: mvn assembly:single (vorher mvn compile)

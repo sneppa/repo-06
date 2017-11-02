@@ -9,3 +9,6 @@ Tomcat/.project
 Tomcat/.settings/**
 Tomcat/output/**
 Tomcat/target/**
+
+WebContent
+Tomcat/WebContent
