@@ -1,0 +1,10 @@
+# Test
+
+.classpath
+.project
+.settings
+
+Tomcat/.classpath
+Tomcat/.project
+Tomcat/.settings
+Tomcat/output
